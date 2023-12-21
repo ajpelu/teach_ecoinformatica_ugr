@@ -4,7 +4,7 @@ A template for course websites developed with [Quarto](https://quarto.org) and h
 
 This is all configured so you only need to edit the source files in Quarto (.qmd). The website is generated and hosted automatically by GitHub.
 
-Example website: https://pakillo.github.io/quarto-course-website-template (see also https://github.com/rstudio-conf-2022/teach-ds-course-website for a more developed example).
+Example website: https://ajpelu.github.io/ajpelu/teach_ecoinformatica_ugr) (see also https://github.com/rstudio-conf-2022/teach-ds-course-website for a more developed example).
 
 
 ## Using this template
