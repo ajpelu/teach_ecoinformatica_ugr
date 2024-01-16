@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Course Title"
+  title: "Ciclo de Gestión de los Datos. Ecoinformática"
   sidebar:
     background: primary
     # logo: "images/logo.png"
@@ -11,18 +11,16 @@ website:
     align: center
     tools:
       - icon: github
-        href: https://github.com/Pakillo/quarto-course-website-template
+        href: https://github.com/ajpelu/teach_ecoinformatica_ugr
         text: GitHub
     style: docked
     contents:
       - href: index.qmd
         text: Home
-      - href: schedule.qmd
-        text: Schedule
-      - href: materials.qmd
-        text: Materials
-      - href: https://github.com/Pakillo/quarto-course-website-template/discussions
-        text: Forum
+      - href: horario.qmd
+        text: Horario
+      - href: modulos.qmd
+        text: Modulos
 
 format:
   html:

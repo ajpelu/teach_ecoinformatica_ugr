@@ -1,5 +1,16 @@
 ---
-title: "Course Title"
+title: "Ciclo de Gestión de los Datos: Ecoinformática. <br> Módulo de Reproducibilidad"
 ---
 
-Course info & details here
+¿Cuántas veces hemos querido revisitar un análisis estadístico meses o años después y no hemos sido capaces, bien porque no recordamos cómo hacerlo o los datos no están fácilmente disponibles? 
+
+¿Cuánto tiempo perdemos en rehacer análisis estadísticos, figuras o tablas tras corregir un error en los datos? 
+
+¿Cuánto tiempo invertimos intentando implementar un nuevo método de análisis a partir de la escueta descripción proporcionada en un artículo? 
+
+¿Cuántas veces hemos intentado recabar datos infructuosamente porque los autores han perdido los datos, su formato es ilegible hoy en día, o simplemente se niegan a compartirlos?
+
+Todas estas preguntas nos las hacemos .... 
+
+
+

@@ -1,0 +1,9 @@
+---
+title: "Sesiones"
+---
+
+| Fecha              | Aula    | Sesión               | Materiales |
+|--------------------|---------|----------------------|------------|
+| 16-01-2024 18.00 h | Inf-007 | Reproducibilidad     |            |
+| 18-01-2024 18.00 h | Inf-007 | Control de versiones |            |
+| 22-01-2024 18.00 h | Inf-007 | Control de versiones |            |
