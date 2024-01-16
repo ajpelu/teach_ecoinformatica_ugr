@@ -1,0 +1,15 @@
+[
+  {
+    "listing": "/modulos/reproducibilidad.html",
+    "items": [
+      "/slides/teach_repro/documentos_reproducibles.html",
+      "/slides/teach_repro/teach_repro_slides.html"
+    ]
+  },
+  {
+    "listing": "/modulos.html",
+    "items": [
+      "/modulos/reproducibilidad.html"
+    ]
+  }
+]

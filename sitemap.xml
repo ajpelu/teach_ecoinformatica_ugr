@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://github.com/ajpelu/teach_ecoinformatica_ugr/schedule.html</loc>
-    <lastmod>2024-01-16T12:57:30.004Z</lastmod>
+    <loc>https://github.com/ajpelu/teach_ecoinformatica_ugr/modulos/reproducibilidad.html</loc>
+    <lastmod>2024-01-16T16:13:48.053Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/ajpelu/teach_ecoinformatica_ugr/slides/teach_repro/teach_repro_slides.html</loc>
+    <lastmod>2024-01-16T16:13:46.521Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/ajpelu/teach_ecoinformatica_ugr/index.html</loc>
-    <lastmod>2024-01-16T12:57:29.200Z</lastmod>
+    <lastmod>2024-01-16T16:13:45.769Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/ajpelu/teach_ecoinformatica_ugr/materials.html</loc>
-    <lastmod>2024-01-16T12:57:29.728Z</lastmod>
+    <loc>https://github.com/ajpelu/teach_ecoinformatica_ugr/modulos.html</loc>
+    <lastmod>2024-01-16T16:13:45.221Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/ajpelu/teach_ecoinformatica_ugr/horario.html</loc>
+    <lastmod>2024-01-16T16:13:46.025Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/ajpelu/teach_ecoinformatica_ugr/slides/teach_repro/documentos_reproducibles.html</loc>
+    <lastmod>2024-01-16T16:13:47.733Z</lastmod>
   </url>
 </urlset>
