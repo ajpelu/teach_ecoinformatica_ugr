@@ -399,7 +399,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="b.-bloques-de-código-chunks" class="level3" data-number="2.3.2">
 <h3 data-number="2.3.2" class="anchored" data-anchor-id="b.-bloques-de-código-chunks"><span class="header-section-number">2.3.2</span> b. Bloques de código (<strong>chunks</strong>)</h3>
 <p>Los trozos de código se pueden utilizar para representar la salida del código en los documentos o para mostrar el código para la ilustración. Los trozos de código pueden estar escritos en diferentes lenguajes (e.g.: <code>shell/bash</code>, <code>python</code>, <code>SQL</code>, <code>R</code>, etc.)</p>
-<p>Los bloques de código</p>
 <p>Para insertar un trozo de código en R, puedes escribirlo manualmente escribiendo <code>```{r}</code> seguido de <code>```</code> en la siguiente línea. Esto producirá el siguiente fragmento de código:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="dv">5</span></span>
@@ -462,11 +461,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="incluir-tablas" class="level3" data-number="2.3.4">
 <h3 data-number="2.3.4" class="anchored" data-anchor-id="incluir-tablas"><span class="header-section-number">2.3.4</span> Incluir Tablas</h3>
 <p>Un aspecto muy intersante de los documentos reproducibles es la inclusión de tablas. Para incluir una tabla existen diferentes opciones, siendo la función <code>knitr::kable</code> la que nos permite incluir tablas de la forma mas sencilla (mas información <a href="https://bookdown.org/yihui/rmarkdown-cookbook/kable.html">aquí</a>). Así por ejemplo, si escribimos</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  mtcars[<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>, ]</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>``` {{r}}
+knitr::kable(
+  mtcars[1:5, ]
+)
+```</code></pre>
 <p>obtenemos la <a href="#tbl-ejemplo-tabla">Tabla&nbsp;1</a></p>
 <div class="cell">
 <div class="cell-output-display">

@@ -2,8 +2,9 @@
   {
     "listing": "/modulos/reproducibilidad.html",
     "items": [
-      "/slides/teach_repro/documentos_reproducibles.html",
-      "/slides/teach_repro/teach_repro_slides.html"
+      "/slides/teach_repro/repro_intro_slides.html",
+      "/slides/teach_repro/repro_reproducible_documents.html",
+      "/slides/teach_repro/repro_reproducible_documents_slides.html"
     ]
   },
   {
