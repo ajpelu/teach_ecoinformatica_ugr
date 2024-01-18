@@ -1,0 +1,66 @@
+---
+title: "Análisis del Efecto del Peso de la Bellota en la Altura de la Plántula"
+author: "Tu Nombre"
+date: "2024-01-18"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+## Introducción
+
+Este documento presenta un análisis de datos sobre el efecto del peso de la bellota en la altura de la plántula. Se utilizarán técnicas estadísticas para explorar la relación entre estas dos variables.
+
+```{r setup, include=FALSE}
+# Carga de paquetes necesarios
+library(ggplot2)
+library(knitr)
+library(broom)
+
+
+```
+
+## Carga y exploración de datos
+```{r}
+datos <- read.csv("../datos/peso_altura_bellota.csv")
+
+# Visualizar las primeras filas del conjunto de datos
+head(datos)
+```
+
+## Análisis exploratorio
+```{r}
+# Gráfico de dispersión para visualizar la relación entre las variables
+ggplot(datos, aes(x = peso_bellota, y = altura_plantula)) +
+  geom_point() +
+  labs(title = "Relación entre Peso de la Bellota y Altura de la Plántula",
+       x = "Peso de la Bellota",
+       y = "Altura de la Plántula")
+
+```
+
+# Modelo de Regresión Lineal
+
+```{r}
+# Ajustar un modelo de regresión lineal
+modelo <- lm(altura_plantula ~ peso_bellota, data = datos)
+
+# Resumen del modelo
+summary(modelo)
+```
+
+
+```{r}
+# Utilizar broom para convertir los resultados de la regresión en un marco de datos
+resultados_regresion <- tidy(modelo)
+
+# Mostrar los resultados utilizando kable
+kable(resultados_regresion, caption = "Resultados de la Regresión Lineal")
+```
+
+## Conclusiones
+En base al análisis realizado, se observa una relación significativa entre el peso de la bellota y la altura de la plántula. El modelo de regresión lineal proporciona información sobre la fuerza y dirección de esta relación.
+
+
+
