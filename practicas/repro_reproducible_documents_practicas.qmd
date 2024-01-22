@@ -20,31 +20,34 @@ crossref:
 # Introducción {.unnumbered}
 
 # Objetivos
-- Aprender a crear documentos `.Rmd` que combinan código con texto narrativo
+
+-   Aprender a crear documentos `.Rmd` que combinan código con texto narrativo
 
 # Actividades
 
-- Elige un conjunto de datos sobre el que quieras realizar el documento reproducible. 
-- Genera un documento reproducible que contenga diferentes elementos 
+-   Elige un conjunto de datos sobre el que quieras realizar el documento reproducible.
 
-  - **nivel básico**: 
-      - Una imagen 
-      - Texto en negrita, cursiva
-      - Enlaces a diferentes webs
-      - Un trozo de código
-      - Un gráfico generado a partir de un trozo de código (el alumno tiene que importar el archivo de datos)
-  - **nivel medio**:
-    - una tabla procesada a partir de un código
-    - Referencias bibliográficas
-  - **nivel experto**: 
-    - elementos interactivos (*e.g.* mapa)
-    
+-   Genera un documento reproducible que contenga diferentes elementos
+
+    -   **nivel básico**:
+        -   Una imagen
+        -   Texto en negrita, cursiva
+        -   Enlaces a diferentes webs
+        -   Un trozo de código
+        -   Un gráfico generado a partir de un trozo de código (el alumno tiene que importar el archivo de datos)
+    -   **nivel medio**:
+        -   una tabla procesada a partir de un código
+        -   Referencias bibliográficas
+    -   **nivel experto**:
+        -   elementos interactivos (*e.g.* mapa)
+
 ## Entrega
-  - Cada alumno debe entregar una carpeta (en formato comprimido `.zip`) que contenga al menos los siguientes ficheros: el archivo `.Rmd`; el archivo de salida generado (`word`, `pdf`), el conjunto datos usado, y el resto de archivos necesarios para renderizar el documento (*e.g.* imágenes, etc.)
 
-## Recursos 
+-   Cada alumno debe entregar una carpeta (en formato comprimido `.zip`) que contenga al menos los siguientes ficheros: el archivo `.Rmd`; el archivo de salida generado (`word`, `pdf`), el conjunto datos usado, y el resto de archivos necesarios para renderizar el documento (*e.g.* imágenes, etc.)
 
-Para la realización de este ejercicio práctico consulta las diapositivas y el temario que se ha dado en clase así como algunos de los recursos incluidos, como por ejemplo: 
+## Recursos
+
+Para la realización de este ejercicio práctico consulta las diapositivas y el temario que se ha dado en clase así como algunos de los recursos incluidos, como por ejemplo:
 
 -   [R for Data Science](https://es.r4ds.hadley.nz/r-markdown.html) en especial los capítulos 27 a 29 en su versión en castellano.
 

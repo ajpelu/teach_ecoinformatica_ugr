@@ -2,8 +2,15 @@
 title: "Sesiones"
 ---
 
-| Fecha              | Aula    | Sesión               | Materiales |
-|--------------------|---------|----------------------|------------|
-| 16-01-2024 18.00 h | Inf-007 | Reproducibilidad     |            |
-| 18-01-2024 18.00 h | Inf-007 | Control de versiones |            |
-| 22-01-2024 18.00 h | Inf-007 | Control de versiones |            |
+| Fecha              | Aula    | Sesión                              |
+|--------------------|---------|-------------------------------------|
+| 16-01-2024 18.00 h | Inf-007 | Reproducibilidad                    |
+| 18-01-2024 18.00 h | Inf-007 | Reproducibilidad                    |
+| 22-01-2024 18.00 h | Inf-007 | Control de versiones                |
+| 19-02-2024 18.00 h | Inf-007 | Datos primarios de Biodiversidad    |
+| 20-02-2024 18.00 h | Inf-007 | Datos primarios de Biodiversidad    |
+| 21-02-2024 18.00 h | Inf-007 | Datos primarios de Biodiversidad    |
+| 04-03-2024 18.00 h | Inf-007 | Datos primarios de Biodiversidad    |
+| 05-03-2024 18.00 h | Inf-007 | Datos primarios de Biodiversidad    |
+| 07-03-2024 18.00 h | Inf-007 | Datos primarios de Biodiversidad    |
+| 03-04-2024 18.00 h | Inf-007 | Publicación de resultados en la web |

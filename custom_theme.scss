@@ -5,6 +5,7 @@
 
 $font-family-sans-serif: "Atkinson Hyperlegible", sans-serif;
 $code-block-font-size: 0.6em;
+$presentation-heading-color: #416ba3;
 $presentation-h2-font-size: 1.2em;
 
 // colors
@@ -13,9 +14,21 @@ $myblue: #416ba3;
 // $code-color: #5f5f5f;
 
 
-
-
 /*-- scss:rules --*/
+
+// bold in blue
+b, strong {
+  color: $myblue;
+  }
+
+// Reduce size of fig.caption
+.figcaption {
+  font-size: 0.25em;
+}
+
+
+
+
 
 /**********
 
@@ -35,10 +48,6 @@ Title slide
 .quarto-title-author-name {
   color: $myblue;
 }
-
-
-
-
 
 
 

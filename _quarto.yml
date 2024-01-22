@@ -20,7 +20,7 @@ website:
       - href: horario.qmd
         text: Horario
       - href: modulos.qmd
-        text: Modulos
+        text: Módulos
 
 format:
   html:

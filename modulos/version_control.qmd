@@ -1,0 +1,46 @@
+---
+title: "Módulo Control de Versiones"
+description: "22 Enero 2024"
+author: ""
+date: ""
+listing:
+  - id: slides
+    contents:
+      - ../slides/teach_git/*.qmd
+    type: table
+    fields: [title, date]
+    date-format: "ddd, MMM DD"
+    field-display-names:
+      title: "Nombre"
+      date: "Fecha"
+    sort: [date]
+    sort-ui: false
+    filter-ui: false
+tbl-colwidths: [10,50,40]
+---
+
+# Materiales
+
+::: {#slides}
+:::
+
+# Ejercicios Prácticos
+
+- [Práctica Control de Versiones](../practicas/repro_control_versiones_practicas.qmd)
+
+
+# Lecturas
+
+- Astigarraga, J & Cruz-Alonso V. (2022) [¡Se puede entender cómo funcionan Git y GitHub!](https://doi.org/10.7818/ECOS.2332). Ecosistemas, 31(1), 2332. 
+
+- Galeano Prieto, J (2018) [¿Por qué usar GitHub? Diez pasos para disfrutar de GitHub y no morir en el intento](https://doi.org/10.7818/ECOS.1604). Ecosistemas, 27(2), 140-141. 
+
+
+# Recursos 
+- [Interactive Tutorial Git (CodeSchool)](https://try.github.io/levels/1/challenges/1)
+- [Git - the simple guide (Roger Dudler)](http://rogerdudler.github.io/git-guide/index.es.html)
+- [A basic tutorial to version control using git (Jon Lefcheck)](http://jonlefcheck.net/2013/11/04/a-basic-tutorial-to-version-control-using-git/)
+- [Git/Github guide a minimal tutorial (Karl Broman)](http://kbroman.org/github_tutorial/)
+- [Guía Visual de Git](https://marklodato.github.io/visual-git-guide/index-es.html)
+- [Introducción al funcionamiento y uso de git y github](https://juancuiule.github.io/intro-a-git/)
+
