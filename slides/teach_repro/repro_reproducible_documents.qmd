@@ -4,7 +4,9 @@ format: html
 number-sections: true
 number-depth: 4
 date: 2024-01-18
-author: Antonio J. Pérez-Luque
+author: 
+  name: Antonio J. Pérez-Luque
+  orcid: 0000-0002-1747-0469
 editor: visual
 crossref:
   fig-title: Figura     # (default is "Figure")
@@ -115,7 +117,7 @@ Esta parte del documento se utiliza para describir diferentes aspectos de nuestr
 Para escribir la parte narrativa se utiliza el lenguaje [Markdown](https://es.wikipedia.org/wiki/Markdown), que no es mas que una colección simple de convenciones para dar formato a archivos de texto plano. Está diseñado para que sea fácil de leer, de escribir y también de aprender. En la siguiente tabla tienes algunos ejemplos de como es la sintáxis markdown.
 
 | Formato  | Sintáxis                          | Ejemplo                                  |
-|------------------|--------------------------|----------------------------|
+|-------------------|--------------------------|----------------------------|
 | Cursiva  | `*Texto*`                         | *Esto es cursiva*                        |
 | Negrita  | `**Negrita**`                     | **Esto es negrita**                      |
 | Link     | `[Descripción del texto](url)`    | Un [link](http://www.github.com)         |

@@ -5,8 +5,8 @@ project:
 website:
   title: "Ciclo de Gestión de los Datos. Ecoinformática"
   sidebar:
-    background: primary
-    # logo: "images/logo.png"
+    background: "#416ba3"
+    # logo: "images/logo-no-background.png"
     pinned: true
     align: center
     tools:
