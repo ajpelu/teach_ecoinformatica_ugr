@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="">
+<meta name="description" content="22 Enero 2024">
 
-<title>Ciclo de Gestión de los Datos. Ecoinformática - Módulos</title>
+<title>Ciclo de Gestión de los Datos. Ecoinformática - Módulo Control de Versiones</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,23 +25,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -63,20 +65,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-modulos .list');
+    const listingTargetEl = window.document.querySelector('#listing-slides .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-title','listing-description','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-title','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-title","listing-author"],
+      searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-modulos'] = new List('listing-modulos', options);
+    window['quarto-listings']['listing-slides'] = new List('listing-slides', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -104,7 +106,9 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./modulos.html">Módulos</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Ciclo de Gestión de los Datos. Ecoinformática
+      </li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -119,7 +123,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Ciclo de Gestión de los Datos. Ecoinformática</a> 
+      <a href="../">Ciclo de Gestión de los Datos. Ecoinformática</a> 
         <div class="sidebar-tools-main">
     <a href="https://github.com/ajpelu/teach_ecoinformatica_ugr" rel="" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
 </div>
@@ -134,19 +138,19 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Home</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./horario.html" class="sidebar-item-text sidebar-link">
+  <a href="../horario.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Horario</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./modulos.html" class="sidebar-item-text sidebar-link active">
+  <a href="../modulos.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Módulos</span></a>
   </div>
 </li>
@@ -156,16 +160,30 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#materiales" id="toc-materiales" class="nav-link active" data-scroll-target="#materiales">Materiales</a></li>
+  <li><a href="#ejercicios-prácticos" id="toc-ejercicios-prácticos" class="nav-link" data-scroll-target="#ejercicios-prácticos">Ejercicios Prácticos</a></li>
+  <li><a href="#lecturas" id="toc-lecturas" class="nav-link" data-scroll-target="#lecturas">Lecturas</a></li>
+  <li><a href="#recursos" id="toc-recursos" class="nav-link" data-scroll-target="#recursos">Recursos</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Módulos</h1>
+<h1 class="title">Módulo Control de Versiones</h1>
 </div>
 
+<div>
+  <div class="description">
+    22 Enero 2024
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -178,11 +196,9 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-
-
-
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-modulos">
+<section id="materiales" class="level1">
+<h1>Materiales</h1>
+<div id="listing-slides" class="quarto-listing quarto-listing-container-table">
 
 <table class="quarto-listing-table table">
 <thead>
@@ -193,32 +209,15 @@ Nombre
 <th>
 Fecha
 </th>
-<th>
-Topic
-</th>
 </tr>
 </thead>
 <tbody class="list">
-<tr data-index="0" data-listing-file-modified-sort="1705936358711" data-listing-reading-time-sort="1" data-listing-title-sort="Módulo Reproducibilidad" data-listing-filename-sort="reproducibilidad.qmd">
+<tr data-index="0" data-listing-date-sort="1705881600000" data-listing-file-modified-sort="1705936358715" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-title-sort="Control de Versiones con Git y GitHub" data-listing-filename-sort="git_slides.qmd">
 <td>
-<a href="./modulos/reproducibilidad.html" class="title listing-title">Módulo Reproducibilidad</a>
+<a href="../slides/teach_git/git_slides.html" class="title listing-title">Control de Versiones con Git y GitHub</a>
 </td>
 <td>
-<span class="listing-description">16 - 18 Enero 2024</span>
-</td>
-<td>
-<span class="listing-subtitle">undefined</span>
-</td>
-</tr>
-<tr data-index="1" data-listing-file-modified-sort="1705936358711" data-listing-reading-time-sort="1" data-listing-title-sort="Módulo Control de Versiones" data-listing-filename-sort="version_control.qmd">
-<td>
-<a href="./modulos/version_control.html" class="title listing-title">Módulo Control de Versiones</a>
-</td>
-<td>
-<span class="listing-description">22 Enero 2024</span>
-</td>
-<td>
-<span class="listing-subtitle">undefined</span>
+<span class="listing-date">Mon, Jan 22</span>
 </td>
 </tr>
 </tbody>
@@ -227,7 +226,37 @@ Topic
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-</div></main> <!-- /main -->
+</div>
+</section>
+<section id="ejercicios-prácticos" class="level1">
+<h1>Ejercicios Prácticos</h1>
+<ul>
+<li><a href="../practicas/repro_control_versiones_practicas.html">Práctica Control de Versiones</a></li>
+</ul>
+</section>
+<section id="lecturas" class="level1">
+<h1>Lecturas</h1>
+<ul>
+<li><p>Astigarraga, J &amp; Cruz-Alonso V. (2022) <a href="https://doi.org/10.7818/ECOS.2332">¡Se puede entender cómo funcionan Git y GitHub!</a>. Ecosistemas, 31(1), 2332.</p></li>
+<li><p>Galeano Prieto, J (2018) <a href="https://doi.org/10.7818/ECOS.1604">¿Por qué usar GitHub? Diez pasos para disfrutar de GitHub y no morir en el intento</a>. Ecosistemas, 27(2), 140-141.</p></li>
+</ul>
+</section>
+<section id="recursos" class="level1">
+<h1>Recursos</h1>
+<ul>
+<li><a href="https://try.github.io/levels/1/challenges/1">Interactive Tutorial Git (CodeSchool)</a></li>
+<li><a href="http://rogerdudler.github.io/git-guide/index.es.html">Git - the simple guide (Roger Dudler)</a></li>
+<li><a href="http://jonlefcheck.net/2013/11/04/a-basic-tutorial-to-version-control-using-git/">A basic tutorial to version control using git (Jon Lefcheck)</a></li>
+<li><a href="http://kbroman.org/github_tutorial/">Git/Github guide a minimal tutorial (Karl Broman)</a></li>
+<li><a href="https://marklodato.github.io/visual-git-guide/index-es.html">Guía Visual de Git</a></li>
+<li><a href="https://juancuiule.github.io/intro-a-git/">Introducción al funcionamiento y uso de git y github</a></li>
+</ul>
+
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

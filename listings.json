@@ -1,16 +1,23 @@
 [
   {
-    "listing": "/modulos/reproducibilidad.html",
+    "listing": "/modulos/version_control.html",
     "items": [
-      "/slides/teach_repro/repro_intro_slides.html",
-      "/slides/teach_repro/repro_reproducible_documents.html",
-      "/slides/teach_repro/repro_reproducible_documents_slides.html"
+      "/slides/teach_git/git_slides.html"
     ]
   },
   {
     "listing": "/modulos.html",
     "items": [
-      "/modulos/reproducibilidad.html"
+      "/modulos/reproducibilidad.html",
+      "/modulos/version_control.html"
+    ]
+  },
+  {
+    "listing": "/modulos/reproducibilidad.html",
+    "items": [
+      "/slides/teach_repro/repro_intro_slides.html",
+      "/slides/teach_repro/repro_reproducible_documents.html",
+      "/slides/teach_repro/repro_reproducible_documents_slides.html"
     ]
   }
 ]
