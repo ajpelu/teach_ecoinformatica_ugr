@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="">
-<meta name="description" content="22 Enero 2024">
+<meta name="author" content="Antonio J. Pérez-Luque">
+<meta name="dcterms.date" content="2024-03-04">
 
-<title>Ciclo de Gestión de los Datos. Ecoinformática - Módulo Control de Versiones</title>
+<title>Ciclo de Gestión de los Datos. Ecoinformática - Práctica Búsqueda de datos de Biodiversidad</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -69,65 +67,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-slides .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-slides'] = new List('listing-slides', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -198,10 +138,13 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#materiales" id="toc-materiales" class="nav-link active" data-scroll-target="#materiales">Materiales</a></li>
-  <li><a href="#ejercicios-prácticos" id="toc-ejercicios-prácticos" class="nav-link" data-scroll-target="#ejercicios-prácticos">Ejercicios Prácticos</a></li>
-  <li><a href="#lecturas" id="toc-lecturas" class="nav-link" data-scroll-target="#lecturas">Lecturas</a></li>
-  <li><a href="#recursos" id="toc-recursos" class="nav-link" data-scroll-target="#recursos">Recursos</a></li>
+  <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción">Introducción</a></li>
+  <li><a href="#objetivos" id="toc-objetivos" class="nav-link" data-scroll-target="#objetivos"><span class="header-section-number">1</span> Objetivos</a></li>
+  <li><a href="#actividades" id="toc-actividades" class="nav-link" data-scroll-target="#actividades"><span class="header-section-number">2</span> Actividades</a>
+  <ul class="collapse">
+  <li><a href="#sec-actividad1" id="toc-sec-actividad1" class="nav-link" data-scroll-target="#sec-actividad1"><span class="header-section-number">2.1</span> Actividad 1. Búsqueda y descarga de datos de un taxón</a></li>
+  <li><a href="#actividad-2.-búsqueda-y-descarga-de-datos-de-una-zona-determinada-usando-el-portal-internacional" id="toc-actividad-2.-búsqueda-y-descarga-de-datos-de-una-zona-determinada-usando-el-portal-internacional" class="nav-link" data-scroll-target="#actividad-2.-búsqueda-y-descarga-de-datos-de-una-zona-determinada-usando-el-portal-internacional"><span class="header-section-number">2.2</span> Actividad 2. Búsqueda y descarga de datos de una zona determinada usando el Portal Internacional</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -210,19 +153,26 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Módulo Control de Versiones</h1>
+<h1 class="title">Práctica Búsqueda de datos de Biodiversidad</h1>
 </div>
 
-<div>
-  <div class="description">
-    22 Enero 2024
-  </div>
-</div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Antonio J. Pérez-Luque <a href="https://orcid.org/0000-0002-1747-0469" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 4, 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -232,62 +182,118 @@ window.Quarto = {
 </header>
 
 
-<section id="materiales" class="level1">
-<h1>Materiales</h1>
-<div id="listing-slides" class="quarto-listing quarto-listing-container-table">
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-<th>
-Nombre
-</th>
-<th>
-Fecha
-</th>
-</tr>
-</thead>
-<tbody class="list">
-<tr data-index="0" data-listing-date-sort="1705881600000" data-listing-file-modified-sort="1709565374497" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="858" data-listing-title-sort="Control de Versiones con Git y GitHub" data-listing-filename-sort="git_slides.qmd">
-<td>
-<a href="../slides/teach_git/git_slides.html" class="title listing-title">Control de Versiones con Git y GitHub</a>
-</td>
-<td>
-<span class="listing-date">Mon, Jan 22</span>
-</td>
-</tr>
-</tbody>
-</table>
-<div class="listing-no-matching d-none">
-No matching items
+<section id="introducción" class="level1 unnumbered">
+<h1 class="unnumbered">Introducción</h1>
+</section>
+<section id="objetivos" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Objetivos</h1>
+<ul>
+<li>Familiarizarse con los procesos de búsqueda y de descarga de información primaria de biodiversidad a través del portal de Datos de Biodiversidad del nodo GBIF España (<a href="https://datos.gbif.es/" class="uri">https://datos.gbif.es/</a>).</li>
+</ul>
+</section>
+<section id="actividades" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Actividades</h1>
+<ul>
+<li>Cada alumno ha de hacer las actividades 1 y 2 (<strong>nivel básico</strong>).</li>
+</ul>
+<section id="sec-actividad1" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="sec-actividad1"><span class="header-section-number">2.1</span> Actividad 1. Búsqueda y descarga de datos de un taxón</h2>
+<ol type="1">
+<li><p>Ve al portal de datos de GBIF</p></li>
+<li><p>Realiza una búsqueda del taxon <em>Pinus nigra</em></p></li>
+<li><p>Descarga todos los datos</p></li>
+<li><p>Realiza un informe indicando la tipología de los datos que has obtenido (por ejemplo: tipo de observación, filtros de calidad, etc.). Puedes añadir también algúna imágen de los especímenes.</p></li>
+<li><p>Añade un apartado de discusión al informe relativo a los datos que te has descargado. ¿Has encontrado registros de ausencias? En caso afirmativo, ¿para que crees que sirven este tipo de registros?</p></li>
+</ol>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Entrega
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Cada alumno ha de enviar el informe generado.</li>
+<li>Se valorará positivamente la realización del informe en un documento reproducible (<code>.Rmd</code>) y con control de versiones (con un repositorio asociado). En dicho caso el alumno podrá subir la url del repositorio asociado.</li>
+</ul>
 </div>
 </div>
 </section>
-<section id="ejercicios-prácticos" class="level1">
-<h1>Ejercicios Prácticos</h1>
-<ul>
-<li><a href="../practicas/repro_control_versiones_practicas.html">Práctica Control de Versiones</a></li>
-</ul>
+<section id="actividad-2.-búsqueda-y-descarga-de-datos-de-una-zona-determinada-usando-el-portal-internacional" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="actividad-2.-búsqueda-y-descarga-de-datos-de-una-zona-determinada-usando-el-portal-internacional"><span class="header-section-number">2.2</span> Actividad 2. Búsqueda y descarga de datos de una zona determinada usando el Portal Internacional</h2>
+<ol type="1">
+<li>Ve al portal de datos internacional de GBIF <a href="https://www.gbif.org/" class="uri">https://www.gbif.org/</a> (<a href="#fig-portal" class="quarto-xref">Figura&nbsp;1</a>).</li>
+</ol>
+<div id="fig-portal" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-portal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/primary-portal.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-portal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;1. Vista del Portal Internacional de datos
+</figcaption>
+</figure>
+</div>
+<ol start="2" type="1">
+<li><p>Realiza una búsqueda espacial de todos los registros que existen en Sierra Nevada. Para ello utiliza el archivo de delimitación de Sierra Nevada en formato WKT que puedes encontrar <a href="https://raw.githubusercontent.com/ajpelu/teach_ecoinformatica_ugr/main/slides/teach_primary_data/images/sn_wkt.txt">aquí</a></p></li>
+<li><p>Ve al apartado <strong><em>Get data</em></strong> y dentro de él, al apartado <strong><em>Occurrences</em></strong></p></li>
+<li><p>En el menú de la izquierda, usa el filtro <strong><em>Location</em></strong> y especifica la opción <strong><em>Geometry</em></strong> (<a href="#fig-wkt" class="quarto-xref">Figura&nbsp;2</a>).</p></li>
+</ol>
+<div id="fig-wkt" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-wkt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/primary-wkt.png" height="600" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-wkt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;2. Inclusión del archivo espacial para realizar la búsqueda
+</figcaption>
+</figure>
+</div>
+<ol start="5" type="1">
+<li>Incluye la delimitación de Sierra Nevada usando el archivo WKT indicado previamente (<a href="#fig-map" class="quarto-xref">Figura&nbsp;3</a>).</li>
+</ol>
+<div id="fig-map" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/primary-map.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;3. Mapa con los resultados
+</figcaption>
+</figure>
+</div>
+<ol start="6" type="1">
+<li>Descarga la búsqueda. Recuerda que te pedirá que te identifiques para realizar la descarga (<a href="#fig-download" class="quarto-xref">Figura&nbsp;4</a>)</li>
+</ol>
+<div id="fig-download" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-download-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/primary-download.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-download-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4. Vista de la descarga de los resultados
+</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Entrega
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>No es necesario realizar entrega, puesto que los datos descargados los usaréis mas adelante para el otro módulo</p>
+</div>
+</div>
+
+
 </section>
-<section id="lecturas" class="level1">
-<h1>Lecturas</h1>
-<ul>
-<li><p>Astigarraga, J &amp; Cruz-Alonso V. (2022) <a href="https://doi.org/10.7818/ECOS.2332">¡Se puede entender cómo funcionan Git y GitHub!</a>. Ecosistemas, 31(1), 2332.</p></li>
-<li><p>Galeano Prieto, J (2018) <a href="https://doi.org/10.7818/ECOS.1604">¿Por qué usar GitHub? Diez pasos para disfrutar de GitHub y no morir en el intento</a>. Ecosistemas, 27(2), 140-141.</p></li>
-</ul>
-</section>
-<section id="recursos" class="level1">
-<h1>Recursos</h1>
-<ul>
-<li><a href="https://try.github.io/levels/1/challenges/1">Interactive Tutorial Git (CodeSchool)</a></li>
-<li><a href="http://rogerdudler.github.io/git-guide/index.es.html">Git - the simple guide (Roger Dudler)</a></li>
-<li><a href="http://jonlefcheck.net/2013/11/04/a-basic-tutorial-to-version-control-using-git/">A basic tutorial to version control using git (Jon Lefcheck)</a></li>
-<li><a href="http://kbroman.org/github_tutorial/">Git/Github guide a minimal tutorial (Karl Broman)</a></li>
-<li><a href="https://marklodato.github.io/visual-git-guide/index-es.html">Guía Visual de Git</a></li>
-<li><a href="https://juancuiule.github.io/intro-a-git/">Introducción al funcionamiento y uso de git y github</a></li>
-</ul>
-
-
-
 </section>
 
 </main> <!-- /main -->

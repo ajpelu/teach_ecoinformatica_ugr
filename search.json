@@ -126,6 +126,55 @@
     "text": "Tipos de búsquedas:\n\nSimple\nAvanzada\nPor nombres científicos (lotes)\nPor números de catálogo\nEventos\nEspacial (Área)"
   },
   {
+    "objectID": "slides/teach_primary_data/primary_search_biodiversity.html#búsqueda-espacial",
+    "href": "slides/teach_primary_data/primary_search_biodiversity.html#búsqueda-espacial",
+    "title": "Búsqueda de Datos primarios de Biodiversidad",
+    "section": "Búsqueda Espacial",
+    "text": "Búsqueda Espacial"
+  },
+  {
+    "objectID": "slides/teach_primary_data/primary_search_biodiversity.html#tipos-de-búsquedas-espaciales",
+    "href": "slides/teach_primary_data/primary_search_biodiversity.html#tipos-de-búsquedas-espaciales",
+    "title": "Búsqueda de Datos primarios de Biodiversidad",
+    "section": "Tipos de búsquedas espaciales",
+    "text": "Tipos de búsquedas espaciales\n\nDibujar un área de interés\nImportar un área:\n\nformato WKT (Well Known Text)\n\nRegiones definidas"
+  },
+  {
+    "objectID": "slides/teach_primary_data/primary_search_biodiversity.html#dibujar-un-área-de-interés",
+    "href": "slides/teach_primary_data/primary_search_biodiversity.html#dibujar-un-área-de-interés",
+    "title": "Búsqueda de Datos primarios de Biodiversidad",
+    "section": "Dibujar un área de interés",
+    "text": "Dibujar un área de interés"
+  },
+  {
+    "objectID": "slides/teach_primary_data/primary_search_biodiversity.html#dibujar-un-área-de-interés-resultados",
+    "href": "slides/teach_primary_data/primary_search_biodiversity.html#dibujar-un-área-de-interés-resultados",
+    "title": "Búsqueda de Datos primarios de Biodiversidad",
+    "section": "Dibujar un área de interés (resultados)",
+    "text": "Dibujar un área de interés (resultados)"
+  },
+  {
+    "objectID": "slides/teach_primary_data/primary_search_biodiversity.html#wkt",
+    "href": "slides/teach_primary_data/primary_search_biodiversity.html#wkt",
+    "title": "Búsqueda de Datos primarios de Biodiversidad",
+    "section": "WKT",
+    "text": "WKT\n\nDefinir area usando un archivo WKT"
+  },
+  {
+    "objectID": "slides/teach_primary_data/primary_search_biodiversity.html#regiones-definidas",
+    "href": "slides/teach_primary_data/primary_search_biodiversity.html#regiones-definidas",
+    "title": "Búsqueda de Datos primarios de Biodiversidad",
+    "section": "Regiones Definidas",
+    "text": "Regiones Definidas\n\nIr a Regiones o visitar https://regiones.gbif.es/"
+  },
+  {
+    "objectID": "slides/teach_primary_data/primary_search_biodiversity.html#regiones-definidas-1",
+    "href": "slides/teach_primary_data/primary_search_biodiversity.html#regiones-definidas-1",
+    "title": "Búsqueda de Datos primarios de Biodiversidad",
+    "section": "Regiones Definidas",
+    "text": "Regiones Definidas\n\nSeleccionar Región Definida"
+  },
+  {
     "objectID": "slides/teach_primary_data/primary_search_biodiversity.html#alguna-duda",
     "href": "slides/teach_primary_data/primary_search_biodiversity.html#alguna-duda",
     "title": "Búsqueda de Datos primarios de Biodiversidad",
@@ -427,80 +476,18 @@
     "text": "¿Alguna duda?\n\n@ajpelu\nantonio.perez@inia.csic.es\n\n\nAyuda JDC2022-050056-I financiada por MCIN/AEI /10.13039/501100011033 y por la Unión Europea NextGenerationEU/PRTR\n\n\n\n\n\n\n\n\n\n\nMaster Universitario en Conservación, Gestión y Restauración de la Biodiversidad"
   },
   {
-    "objectID": "practicas/repro_reproducible_documents_practicas.html#entrega",
-    "href": "practicas/repro_reproducible_documents_practicas.html#entrega",
-    "title": "Práctica Documentos Reproducibles",
-    "section": "2.1 Entrega",
-    "text": "2.1 Entrega\n\nCada alumno debe entregar una carpeta (en formato comprimido .zip) que contenga al menos los siguientes ficheros: el archivo .Rmd; el archivo de salida generado (word, pdf), el conjunto datos usado, y el resto de archivos necesarios para renderizar el documento (e.g. imágenes, etc.)"
+    "objectID": "practicas/primary_data_practicas.html#sec-actividad1",
+    "href": "practicas/primary_data_practicas.html#sec-actividad1",
+    "title": "Práctica Búsqueda de datos de Biodiversidad",
+    "section": "2.1 Actividad 1. Búsqueda y descarga de datos de un taxón",
+    "text": "2.1 Actividad 1. Búsqueda y descarga de datos de un taxón\n\nVe al portal de datos de GBIF\nRealiza una búsqueda del taxon Pinus nigra\nDescarga todos los datos\nRealiza un informe indicando la tipología de los datos que has obtenido (por ejemplo: tipo de observación, filtros de calidad, etc.). Puedes añadir también algúna imágen de los especímenes.\nAñade un apartado de discusión al informe relativo a los datos que te has descargado. ¿Has encontrado registros de ausencias? En caso afirmativo, ¿para que crees que sirven este tipo de registros?\n\n\n\n\n\n\n\nEntrega\n\n\n\n\nCada alumno ha de enviar el informe generado.\nSe valorará positivamente la realización del informe en un documento reproducible (.Rmd) y con control de versiones (con un repositorio asociado). En dicho caso el alumno podrá subir la url del repositorio asociado."
   },
   {
-    "objectID": "practicas/repro_reproducible_documents_practicas.html#recursos",
-    "href": "practicas/repro_reproducible_documents_practicas.html#recursos",
-    "title": "Práctica Documentos Reproducibles",
-    "section": "2.2 Recursos",
-    "text": "2.2 Recursos\nPara la realización de este ejercicio práctico consulta las diapositivas y el temario que se ha dado en clase así como algunos de los recursos incluidos, como por ejemplo:\n\nR for Data Science en especial los capítulos 27 a 29 en su versión en castellano.\nR for Reproducible Scientific Analysis (RMarkdown / knitr)\nReproducible reports with R markdown\nR para Análisis Científicos Reproducibles\nLevel up in R Markdown\nIntroducing RStudio and R Markdown\nCurso de Introducción a R\nEscribir un Trabajo Fin de Estudios con R Markdown\n… Existen muchos más"
-  },
-  {
-    "objectID": "practicas/repro_control_versiones_practicas.html#sec-actividad1",
-    "href": "practicas/repro_control_versiones_practicas.html#sec-actividad1",
-    "title": "Práctica Control de Versiones",
-    "section": "2.1 Actividad 1. Control de Versiones de un proyecto",
-    "text": "2.1 Actividad 1. Control de Versiones de un proyecto\n\nInstalar Git en tu ordenador.\nCrear un repositorio llamado ecoinf_nombre Ejemplo:\n\necoinf_antonioperez\n\nGenera un documento de texto plano (.txt) o un script (.R).\nRealiza varios cambios en el documento y registra cada cambio.\nHaz un control de versiones.\nCrea un repositorio en GitHub.\nConecta ambos repositorios (repositorio local y repositorio remoto) y sincronízalos.\n\n\n\n\n\n\n\nEntrega\n\n\n\nCada alumno ha de enviar la url del repositorio creado en github."
-  },
-  {
-    "objectID": "practicas/repro_control_versiones_practicas.html#actividad-2.-control-de-versiones-colaboración",
-    "href": "practicas/repro_control_versiones_practicas.html#actividad-2.-control-de-versiones-colaboración",
-    "title": "Práctica Control de Versiones",
-    "section": "2.2 Actividad 2. Control de Versiones (Colaboración)",
-    "text": "2.2 Actividad 2. Control de Versiones (Colaboración)\n\nCrea un fork del repositorio https://github.com/ajpelu/teach_git_ejemplo\nClona el repositorio en tu equipo para tener una copia local.\nEscribe algo en el documento miarchivo.txt (además de tu nombre y tus apellidos, algo original: un poema, una canción, un refrán, un mensaje, una receta, … ).\nRegistra los cambios y haz un control de versiones.\nSincroniza con tu repositorio remoto.\nHaz un pull request.\n\n\n\n\n\n\n\nTip\n\n\n\nSi tienes alguna duda consulta puedes leer este tutorial\n\n\n\n\n\n\n\n\nEntrega\n\n\n\nNo es necesario realizar entrega, puesto que me llegarán los pull requests de cada alumno"
-  },
-  {
-    "objectID": "practicas/repro_control_versiones_practicas.html#actividad-3.-control-de-versiones-de-documentos-reproducibles",
-    "href": "practicas/repro_control_versiones_practicas.html#actividad-3.-control-de-versiones-de-documentos-reproducibles",
-    "title": "Práctica Control de Versiones",
-    "section": "2.3 Actividad 3. Control de Versiones de Documentos Reproducibles",
-    "text": "2.3 Actividad 3. Control de Versiones de Documentos Reproducibles\n\nCrea un documento reproducible con .Rmd y exportalo en el formato que mas te guste (pdf, word, etc.). El documento debe contener al menos texto, imágenes, código, tablas, etc.\nRealiza cambios en el documento:\n\n\nPersonaliza con el encabezado YAML\nIncluye texto\nModifica el código\n\n\nRegistra los cambios en el documento mediante el control de versiones de forma local y en remoto.\nUsa el repositorio del la Actividad 1.\n\n\n\n\n\n\n\nEntrega\n\n\n\nCada alumno ha de enviar la url del repositorio creado en github así como un archivo comprimido (.zip) con una copia de su repositorio local."
-  },
-  {
-    "objectID": "practicas/repro_control_versiones_practicas.html#recursos",
-    "href": "practicas/repro_control_versiones_practicas.html#recursos",
-    "title": "Práctica Control de Versiones",
-    "section": "2.4 Recursos",
-    "text": "2.4 Recursos\nPara la realización de este ejercicio práctico consulta las diapositivas y el temario que se ha dado en clase así como algunos de los recursos incluidos, como por ejemplo:\n\nInteractive Tutorial Git (CodeSchool)\nGit - the simple guide (Roger Dudler)\nGit and GitHub (Hadley Wickham)\nA brief introduction to git & GitHub (Karl Broman & Samuel G. Younkin)\nA basic tutorial to version control using git (Jon Lefcheck)\nGit/Github guide a minimal tutorial (Karl Broman)\nGetting Git Right (Atlassian)\nRecopilación de tutoriales (F. Rodríguez-Sánchez)\nGuía Visual de Git\nIntroducción al funcionamiento y uso de git y github\n… Existen muchos más"
-  },
-  {
-    "objectID": "modulos/reproducibilidad.html",
-    "href": "modulos/reproducibilidad.html",
-    "title": "Módulo Reproducibilidad",
-    "section": "",
-    "text": "Materiales\n\n\n\n\n\nNombre\n\n\nFecha\n\n\n\n\n\n\nReproducibilidad en Ciencia\n\n\nTue, Jan 16\n\n\n\n\nDocumentos Reproducibles con Rmarkdown\n\n\nThu, Jan 18\n\n\n\n\nDocumentos Reproducibles con Rmarkdown (slides)\n\n\nThu, Jan 18\n\n\n\n\n\nNo matching items\n\n\n\n\nEjercicios Prácticos\n\nPráctica Documentos Reproducibles\n\n\n\nLecturas\n\nRodríguez-Sánchez F, Pérez-Luque AJ, Bartomeus I, Varela S (2016) Ciencia reproducible: qué, por qué, cómo. Ecosistemas, 25(2): 83-92.\nAlston, J.M & Rick J.A (2021). A Beginner’s Guide to Conducting Reproducible Research. Bulletin Ecological Society of America 103 (2): e01801\nCooper & Hsing (2017) A Guide to Reproducible Code in Ecology and Evolution. British Ecological Society\n\n\n\nRecursos\n\nThe Turing Way handbook to reproducible, ethical and collaborative data science.\nAwesome Reproducible Research. A curated list of reproducible research case studies, projects, tutorials, and media"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Ciclo de Gestión de los Datos: Ecoinformática.  Módulo de Reproducibilidad",
-    "section": "",
-    "text": "¿Cuántas veces hemos querido revisitar un análisis estadístico meses o años después y no hemos sido capaces, bien porque no recordamos cómo hacerlo o los datos no están fácilmente disponibles?\n¿Cuánto tiempo perdemos en rehacer análisis estadísticos, figuras o tablas tras corregir un error en los datos?\n¿Cuánto tiempo invertimos intentando implementar un nuevo método de análisis a partir de la escueta descripción proporcionada en un artículo?\n¿Cuántas veces hemos intentado recabar datos infructuosamente porque los autores han perdido los datos, su formato es ilegible hoy en día, o simplemente se niegan a compartirlos?\nTodas estas preguntas nos las hacemos ….",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "modulos.html",
-    "href": "modulos.html",
-    "title": "Módulos",
-    "section": "",
-    "text": "Nombre\n\n\nFecha\n\n\nTopic\n\n\n\n\n\n\nMódulo Reproducibilidad\n\n\n16 - 18 Enero 2024\n\n\n \n\n\n\n\nMódulo Control de Versiones\n\n\n22 Enero 2024\n\n\n \n\n\n\n\n\nNo matching items",
-    "crumbs": [
-      "Módulos"
-    ]
-  },
-  {
-    "objectID": "modulos/version_control.html",
-    "href": "modulos/version_control.html",
-    "title": "Módulo Control de Versiones",
-    "section": "",
-    "text": "Materiales\n\n\n\n\n\nNombre\n\n\nFecha\n\n\n\n\n\n\nControl de Versiones con Git y GitHub\n\n\nMon, Jan 22\n\n\n\n\n\nNo matching items\n\n\n\n\nEjercicios Prácticos\n\nPráctica Control de Versiones\n\n\n\nLecturas\n\nAstigarraga, J & Cruz-Alonso V. (2022) ¡Se puede entender cómo funcionan Git y GitHub!. Ecosistemas, 31(1), 2332.\nGaleano Prieto, J (2018) ¿Por qué usar GitHub? Diez pasos para disfrutar de GitHub y no morir en el intento. Ecosistemas, 27(2), 140-141.\n\n\n\nRecursos\n\nInteractive Tutorial Git (CodeSchool)\nGit - the simple guide (Roger Dudler)\nA basic tutorial to version control using git (Jon Lefcheck)\nGit/Github guide a minimal tutorial (Karl Broman)\nGuía Visual de Git\nIntroducción al funcionamiento y uso de git y github"
+    "objectID": "practicas/primary_data_practicas.html#actividad-2.-búsqueda-y-descarga-de-datos-de-una-zona-determinada-usando-el-portal-internacional",
+    "href": "practicas/primary_data_practicas.html#actividad-2.-búsqueda-y-descarga-de-datos-de-una-zona-determinada-usando-el-portal-internacional",
+    "title": "Práctica Búsqueda de datos de Biodiversidad",
+    "section": "2.2 Actividad 2. Búsqueda y descarga de datos de una zona determinada usando el Portal Internacional",
+    "text": "2.2 Actividad 2. Búsqueda y descarga de datos de una zona determinada usando el Portal Internacional\n\nVe al portal de datos internacional de GBIF https://www.gbif.org/ (Figura 1).\n\n\n\n\n\n\n\nFigura 1. Vista del Portal Internacional de datos\n\n\n\n\nRealiza una búsqueda espacial de todos los registros que existen en Sierra Nevada. Para ello utiliza el archivo de delimitación de Sierra Nevada en formato WKT que puedes encontrar aquí\nVe al apartado Get data y dentro de él, al apartado Occurrences\nEn el menú de la izquierda, usa el filtro Location y especifica la opción Geometry (Figura 2).\n\n\n\n\n\n\n\nFigura 2. Inclusión del archivo espacial para realizar la búsqueda\n\n\n\n\nIncluye la delimitación de Sierra Nevada usando el archivo WKT indicado previamente (Figura 3).\n\n\n\n\n\n\n\nFigura 3. Mapa con los resultados\n\n\n\n\nDescarga la búsqueda. Recuerda que te pedirá que te identifiques para realizar la descarga (Figura 4)\n\n\n\n\n\n\n\nFigura 4. Vista de la descarga de los resultados\n\n\n\n\n\n\n\n\n\nEntrega\n\n\n\nNo es necesario realizar entrega, puesto que los datos descargados los usaréis mas adelante para el otro módulo"
   },
   {
     "objectID": "practicas/repro_reproducible_documents_ejemplo.html",
@@ -536,6 +523,89 @@
     "title": "Análisis del Efecto del Peso de la Bellota en la Altura de la Plántula",
     "section": "Conclusiones",
     "text": "Conclusiones\nEn base al análisis realizado, se observa una relación significativa entre el peso de la bellota y la altura de la plántula. El modelo de regresión lineal proporciona información sobre la fuerza y dirección de esta relación."
+  },
+  {
+    "objectID": "modulos/version_control.html",
+    "href": "modulos/version_control.html",
+    "title": "Módulo Control de Versiones",
+    "section": "",
+    "text": "Materiales\n\n\n\n\n\nNombre\n\n\nFecha\n\n\n\n\n\n\nControl de Versiones con Git y GitHub\n\n\nMon, Jan 22\n\n\n\n\n\nNo matching items\n\n\n\n\nEjercicios Prácticos\n\nPráctica Control de Versiones\n\n\n\nLecturas\n\nAstigarraga, J & Cruz-Alonso V. (2022) ¡Se puede entender cómo funcionan Git y GitHub!. Ecosistemas, 31(1), 2332.\nGaleano Prieto, J (2018) ¿Por qué usar GitHub? Diez pasos para disfrutar de GitHub y no morir en el intento. Ecosistemas, 27(2), 140-141.\n\n\n\nRecursos\n\nInteractive Tutorial Git (CodeSchool)\nGit - the simple guide (Roger Dudler)\nA basic tutorial to version control using git (Jon Lefcheck)\nGit/Github guide a minimal tutorial (Karl Broman)\nGuía Visual de Git\nIntroducción al funcionamiento y uso de git y github"
+  },
+  {
+    "objectID": "modulos/reproducibilidad.html",
+    "href": "modulos/reproducibilidad.html",
+    "title": "Módulo Reproducibilidad",
+    "section": "",
+    "text": "Materiales\n\n\n\n\n\nNombre\n\n\nFecha\n\n\n\n\n\n\nReproducibilidad en Ciencia\n\n\nTue, Jan 16\n\n\n\n\nDocumentos Reproducibles con Rmarkdown\n\n\nThu, Jan 18\n\n\n\n\nDocumentos Reproducibles con Rmarkdown (slides)\n\n\nThu, Jan 18\n\n\n\n\n\nNo matching items\n\n\n\n\nEjercicios Prácticos\n\nPráctica Documentos Reproducibles\n\n\n\nLecturas\n\nRodríguez-Sánchez F, Pérez-Luque AJ, Bartomeus I, Varela S (2016) Ciencia reproducible: qué, por qué, cómo. Ecosistemas, 25(2): 83-92.\nAlston, J.M & Rick J.A (2021). A Beginner’s Guide to Conducting Reproducible Research. Bulletin Ecological Society of America 103 (2): e01801\nCooper & Hsing (2017) A Guide to Reproducible Code in Ecology and Evolution. British Ecological Society\n\n\n\nRecursos\n\nThe Turing Way handbook to reproducible, ethical and collaborative data science.\nAwesome Reproducible Research. A curated list of reproducible research case studies, projects, tutorials, and media"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Ciclo de Gestión de los Datos: Ecoinformática.  Módulo de Reproducibilidad",
+    "section": "",
+    "text": "¿Cuántas veces hemos querido revisitar un análisis estadístico meses o años después y no hemos sido capaces, bien porque no recordamos cómo hacerlo o los datos no están fácilmente disponibles?\n¿Cuánto tiempo perdemos en rehacer análisis estadísticos, figuras o tablas tras corregir un error en los datos?\n¿Cuánto tiempo invertimos intentando implementar un nuevo método de análisis a partir de la escueta descripción proporcionada en un artículo?\n¿Cuántas veces hemos intentado recabar datos infructuosamente porque los autores han perdido los datos, su formato es ilegible hoy en día, o simplemente se niegan a compartirlos?\nTodas estas preguntas nos las hacemos ….",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "modulos.html",
+    "href": "modulos.html",
+    "title": "Módulos",
+    "section": "",
+    "text": "Nombre\n\n\nFecha\n\n\nTopic\n\n\n\n\n\n\nMódulo Datos Primarios de Biodiversidad\n\n\n19 Febrero - 6 Marzo 2024\n\n\n \n\n\n\n\nMódulo Reproducibilidad\n\n\n16 - 18 Enero 2024\n\n\n \n\n\n\n\nMódulo Control de Versiones\n\n\n22 Enero 2024\n\n\n \n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Módulos"
+    ]
+  },
+  {
+    "objectID": "modulos/datos_primarios.html",
+    "href": "modulos/datos_primarios.html",
+    "title": "Módulo Datos Primarios de Biodiversidad",
+    "section": "",
+    "text": "Materiales\n\n\n\n\n\nNombre\n\n\nFecha\n\n\n\n\n\n\nBúsqueda de Datos primarios de Biodiversidad\n\n\nMon, Mar 04\n\n\n\n\n\nNo matching items\n\n\n\n\nEjercicios Prácticos\n\nPráctica Búsqueda de datos de Biodiversidad”"
+  },
+  {
+    "objectID": "practicas/repro_control_versiones_practicas.html#sec-actividad1",
+    "href": "practicas/repro_control_versiones_practicas.html#sec-actividad1",
+    "title": "Práctica Control de Versiones",
+    "section": "2.1 Actividad 1. Control de Versiones de un proyecto",
+    "text": "2.1 Actividad 1. Control de Versiones de un proyecto\n\nInstalar Git en tu ordenador.\nCrear un repositorio llamado ecoinf_nombre Ejemplo:\n\necoinf_antonioperez\n\nGenera un documento de texto plano (.txt) o un script (.R).\nRealiza varios cambios en el documento y registra cada cambio.\nHaz un control de versiones.\nCrea un repositorio en GitHub.\nConecta ambos repositorios (repositorio local y repositorio remoto) y sincronízalos.\n\n\n\n\n\n\n\nEntrega\n\n\n\nCada alumno ha de enviar la url del repositorio creado en github."
+  },
+  {
+    "objectID": "practicas/repro_control_versiones_practicas.html#actividad-2.-control-de-versiones-colaboración",
+    "href": "practicas/repro_control_versiones_practicas.html#actividad-2.-control-de-versiones-colaboración",
+    "title": "Práctica Control de Versiones",
+    "section": "2.2 Actividad 2. Control de Versiones (Colaboración)",
+    "text": "2.2 Actividad 2. Control de Versiones (Colaboración)\n\nCrea un fork del repositorio https://github.com/ajpelu/teach_git_ejemplo\nClona el repositorio en tu equipo para tener una copia local.\nEscribe algo en el documento miarchivo.txt (además de tu nombre y tus apellidos, algo original: un poema, una canción, un refrán, un mensaje, una receta, … ).\nRegistra los cambios y haz un control de versiones.\nSincroniza con tu repositorio remoto.\nHaz un pull request.\n\n\n\n\n\n\n\nTip\n\n\n\nSi tienes alguna duda consulta puedes leer este tutorial\n\n\n\n\n\n\n\n\nEntrega\n\n\n\nNo es necesario realizar entrega, puesto que me llegarán los pull requests de cada alumno"
+  },
+  {
+    "objectID": "practicas/repro_control_versiones_practicas.html#actividad-3.-control-de-versiones-de-documentos-reproducibles",
+    "href": "practicas/repro_control_versiones_practicas.html#actividad-3.-control-de-versiones-de-documentos-reproducibles",
+    "title": "Práctica Control de Versiones",
+    "section": "2.3 Actividad 3. Control de Versiones de Documentos Reproducibles",
+    "text": "2.3 Actividad 3. Control de Versiones de Documentos Reproducibles\n\nCrea un documento reproducible con .Rmd y exportalo en el formato que mas te guste (pdf, word, etc.). El documento debe contener al menos texto, imágenes, código, tablas, etc.\nRealiza cambios en el documento:\n\n\nPersonaliza con el encabezado YAML\nIncluye texto\nModifica el código\n\n\nRegistra los cambios en el documento mediante el control de versiones de forma local y en remoto.\nUsa el repositorio del la Actividad 1.\n\n\n\n\n\n\n\nEntrega\n\n\n\nCada alumno ha de enviar la url del repositorio creado en github así como un archivo comprimido (.zip) con una copia de su repositorio local."
+  },
+  {
+    "objectID": "practicas/repro_control_versiones_practicas.html#recursos",
+    "href": "practicas/repro_control_versiones_practicas.html#recursos",
+    "title": "Práctica Control de Versiones",
+    "section": "2.4 Recursos",
+    "text": "2.4 Recursos\nPara la realización de este ejercicio práctico consulta las diapositivas y el temario que se ha dado en clase así como algunos de los recursos incluidos, como por ejemplo:\n\nInteractive Tutorial Git (CodeSchool)\nGit - the simple guide (Roger Dudler)\nGit and GitHub (Hadley Wickham)\nA brief introduction to git & GitHub (Karl Broman & Samuel G. Younkin)\nA basic tutorial to version control using git (Jon Lefcheck)\nGit/Github guide a minimal tutorial (Karl Broman)\nGetting Git Right (Atlassian)\nRecopilación de tutoriales (F. Rodríguez-Sánchez)\nGuía Visual de Git\nIntroducción al funcionamiento y uso de git y github\n… Existen muchos más"
+  },
+  {
+    "objectID": "practicas/repro_reproducible_documents_practicas.html#entrega",
+    "href": "practicas/repro_reproducible_documents_practicas.html#entrega",
+    "title": "Práctica Documentos Reproducibles",
+    "section": "2.1 Entrega",
+    "text": "2.1 Entrega\n\nCada alumno debe entregar una carpeta (en formato comprimido .zip) que contenga al menos los siguientes ficheros: el archivo .Rmd; el archivo de salida generado (word, pdf), el conjunto datos usado, y el resto de archivos necesarios para renderizar el documento (e.g. imágenes, etc.)"
+  },
+  {
+    "objectID": "practicas/repro_reproducible_documents_practicas.html#recursos",
+    "href": "practicas/repro_reproducible_documents_practicas.html#recursos",
+    "title": "Práctica Documentos Reproducibles",
+    "section": "2.2 Recursos",
+    "text": "2.2 Recursos\nPara la realización de este ejercicio práctico consulta las diapositivas y el temario que se ha dado en clase así como algunos de los recursos incluidos, como por ejemplo:\n\nR for Data Science en especial los capítulos 27 a 29 en su versión en castellano.\nR for Reproducible Scientific Analysis (RMarkdown / knitr)\nReproducible reports with R markdown\nR para Análisis Científicos Reproducibles\nLevel up in R Markdown\nIntroducing RStudio and R Markdown\nCurso de Introducción a R\nEscribir un Trabajo Fin de Estudios con R Markdown\n… Existen muchos más"
   },
   {
     "objectID": "horario.html",

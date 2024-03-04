@@ -1,5 +1,11 @@
 [
   {
+    "listing": "/modulos/version_control.html",
+    "items": [
+      "/slides/teach_git/git_slides.html"
+    ]
+  },
+  {
     "listing": "/modulos/reproducibilidad.html",
     "items": [
       "/slides/teach_repro/repro_intro_slides.html",
@@ -10,14 +16,15 @@
   {
     "listing": "/modulos.html",
     "items": [
+      "/modulos/datos_primarios.html",
       "/modulos/reproducibilidad.html",
       "/modulos/version_control.html"
     ]
   },
   {
-    "listing": "/modulos/version_control.html",
+    "listing": "/modulos/datos_primarios.html",
     "items": [
-      "/slides/teach_git/git_slides.html"
+      "/slides/teach_primary_data/primary_search_biodiversity.html"
     ]
   }
 ]
