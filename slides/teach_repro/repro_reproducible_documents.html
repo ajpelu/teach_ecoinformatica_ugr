@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -24,7 +24,7 @@ ul.task-list li input[type="checkbox"] {
 }
 /* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -80,7 +80,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -89,6 +95,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -98,6 +105,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
 </head>
 
 <body class="nav-sidebar docked">
@@ -106,14 +140,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
       Ciclo de Gestión de los Datos. Ecoinformática
       </li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -123,12 +157,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="../../">Ciclo de Gestión de los Datos. Ecoinformática</a> 
         <div class="sidebar-tools-main">
-    <a href="https://github.com/ajpelu/teach_ecoinformatica_ugr" rel="" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/ajpelu/teach_ecoinformatica_ugr" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
 </div>
     </div>
       </div>
@@ -160,7 +194,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -220,16 +254,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
   
 
+
 </header>
+
 
 <section id="introducción" class="level1 unnumbered">
 <h1 class="unnumbered">Introducción</h1>
-<p>En este tutorial vamos a aprender a crear documentos dinámicos y reproducibles con R y Rmarkdown (<code>Rmd</code>)(<a href="#fig-rmd-allison">Figura&nbsp;1</a>). Vamos a trabajar con <a href="https://www.r-project.org/">R</a>, Rstudio (ahora llamado <a href="https://posit.co/">posit</a>), y utilizaremos al menos el paquete <a href="https://rmarkdown.rstudio.com/"><code>rmarkdown</code></a>.</p>
+<p>En este tutorial vamos a aprender a crear documentos dinámicos y reproducibles con R y Rmarkdown (<code>Rmd</code>)(<a href="#fig-rmd-allison" class="quarto-xref">Figura&nbsp;1</a>). Vamos a trabajar con <a href="https://www.r-project.org/">R</a>, Rstudio (ahora llamado <a href="https://posit.co/">posit</a>), y utilizaremos al menos el paquete <a href="https://rmarkdown.rstudio.com/"><code>rmarkdown</code></a>.</p>
 <p>Para la realización de este tutorial hemos utilizado recursos de diferentes fuentes. En el apartado <a href="#sec-recursos">Recursos</a> se encuentran listados todos los que se han utilizado.</p>
-<div id="fig-rmd-allison" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="images/rmd-allison.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figura&nbsp;1. Esquema general de <code>Rmd</code>. Fuente: <a href="https://allisonhorst.com/allison-horst">@allison_horst</a></figcaption>
+<div id="fig-rmd-allison" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-rmd-allison-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/rmd-allison.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rmd-allison-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;1. Esquema general de <code>Rmd</code>. Fuente: <a href="https://allisonhorst.com/allison-horst">@allison_horst</a>
+</figcaption>
 </figure>
 </div>
 </section>
@@ -244,28 +284,40 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><img src="images/rmd-workflow.png" class="img-fluid"></p>
 <section id="crear-un-archivo-.rmd" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="crear-un-archivo-.rmd"><span class="header-section-number">1.1</span> Crear un archivo <code>.Rmd</code></h2>
-<p>Dentro de R-Studio, haz clic en <strong>Archivo → Nuevo archivo → Rmarkdown</strong> (<a href="#fig-crea-rmd">Figura&nbsp;2</a>).</p>
+<p>Dentro de R-Studio, haz clic en <strong>Archivo → Nuevo archivo → Rmarkdown</strong> (<a href="#fig-crea-rmd" class="quarto-xref">Figura&nbsp;2</a>).</p>
 <div id="fig-crea-rmd" class="quarto-layout-panel">
-<figure class="figure">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-crea-rmd-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-layout-row quarto-layout-valign-bottom">
-<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
-<div id="fig-create-rmd" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="images/rmd-create.png" class="img-fluid figure-img" data-ref-parent="fig-crea-rmd"></p>
-<figcaption class="figure-caption">(a) Crea archivo <code>Rmd</code></figcaption>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-crea-rmd" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-create-rmd" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-create-rmd-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/rmd-create.png" class="img-fluid figure-img" data-ref-parent="fig-crea-rmd">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-create-rmd-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Crea archivo <code>Rmd</code>
+</figcaption>
 </figure>
 </div>
 </div>
-<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
-<div id="fig-create-rmd-details" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="images/rmd-create2.png" class="img-fluid figure-img" data-ref-parent="fig-crea-rmd"></p>
-<figcaption class="figure-caption">(b) Define detalles generales <code>Rmd</code></figcaption>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-crea-rmd" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-create-rmd-details" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-create-rmd-details-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/rmd-create2.png" class="img-fluid figure-img" data-ref-parent="fig-crea-rmd">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-create-rmd-details-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Define detalles generales <code>Rmd</code>
+</figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p></p><figcaption class="figure-caption">Figura&nbsp;2. Crea archivo <code>Rmd</code></figcaption><p></p>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-crea-rmd-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;2. Crea archivo <code>Rmd</code>
+</figcaption>
 </figure>
 </div>
 </section>
@@ -277,26 +329,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><a href="https://yaml.org/">YAML</a><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, es un lenguaje de serialización de datos para todos los lenguajes de programación. Se diseño para representar datos jerárquicos pero que sea fácil de escribir y leer por humanos.</p>
 <p>El encabezado YAML presenta estructura de lista anidada y contiene diferentes metadatos del documento (como el título del documento, el autor, los formatos de salida, etc). Todos estos argumentos quedan delimitados por tres guiones <code>---</code> al inicio y al final (a modo de bloque).</p>
 <div id="fig-yaml" class="quarto-layout-panel">
-<figure class="figure">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-yaml-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-layout-row quarto-layout-valign-bottom">
-<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
-<div id="fig-ymal-example" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="images/ymal-example.png" class="img-fluid figure-img" data-ref-parent="fig-yaml"></p>
-<figcaption class="figure-caption">(a) Encabezado YAML</figcaption>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-yaml" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-ymal-example" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-ymal-example-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/ymal-example.png" class="img-fluid figure-img" data-ref-parent="fig-yaml">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-ymal-example-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Encabezado YAML
+</figcaption>
 </figure>
 </div>
 </div>
-<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
-<div id="fig-yaml-render" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="images/ymal-render.png" class="img-fluid figure-img" data-ref-parent="fig-yaml"></p>
-<figcaption class="figure-caption">(b) Vista tras su renderización</figcaption>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-yaml" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-yaml-render" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-yaml-render-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/ymal-render.png" class="img-fluid figure-img" data-ref-parent="fig-yaml">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-yaml-render-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Vista tras su renderización
+</figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p></p><figcaption class="figure-caption">Figura&nbsp;3. Encabezado YAML</figcaption><p></p>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-yaml-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;3. Encabezado YAML
+</figcaption>
 </figure>
 </div>
 <p>Existen diferenes parámetros que se pueden especificar en el encabezado YAML, que van a definir algunas características del documento.</p>
@@ -316,7 +380,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">word_document</span><span class="kw">:</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">reference_docx</span><span class="kw">:</span><span class="at"> </span><span class="st">"template.docx"</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Existen diferentes formatos de salida de documentos. En el ejemplo (<a href="#fig-yaml">Figura&nbsp;3</a>) hemos usado <code>html</code>, pero podemos especificar diferentes formatos de salida (<code>word</code>, <code>pdf</code>, presentaciones, etc.). Cada tipo de documento de salida presenta diferentes parámetros que se pueden especificar en la cabecera YAML. Por ejemplo, para saber qué parámetros puedes definir con <code>html_document</code>, podemos usar el comando <code>?rmarkdown::html_document</code>. Así, por ejemplo:</p>
+<p>Existen diferentes formatos de salida de documentos. En el ejemplo (<a href="#fig-yaml" class="quarto-xref">Figura&nbsp;3</a>) hemos usado <code>html</code>, pero podemos especificar diferentes formatos de salida (<code>word</code>, <code>pdf</code>, presentaciones, etc.). Cada tipo de documento de salida presenta diferentes parámetros que se pueden especificar en la cabecera YAML. Por ejemplo, para saber qué parámetros puedes definir con <code>html_document</code>, podemos usar el comando <code>?rmarkdown::html_document</code>. Así, por ejemplo:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>?rmarkdown<span class="sc">::</span>word_document</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -408,11 +472,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>Knitr interpreta ese trozo de texto como instrucciones de R, las ejecutará y mostrará los resultados como parte del documento.</p>
-<p>En la siguiente animación (<a href="#fig-chunk-anatomy">Figura&nbsp;4</a>) puedes ver la anatomía de un trozo de código.</p>
-<div id="fig-chunk-anatomy" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="gif/chunk-anatomy.gif" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figura&nbsp;4. Anatomía de un trozo de Código. Fuente: <a href="https://www.pipinghotdata.com/posts/2020-09-07-introducing-the-rstudio-ide-and-r-markdown/">Shannon Pileggi</a></figcaption>
+<p>En la siguiente animación (<a href="#fig-chunk-anatomy" class="quarto-xref">Figura&nbsp;4</a>) puedes ver la anatomía de un trozo de código.</p>
+<div id="fig-chunk-anatomy" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-chunk-anatomy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="gif/chunk-anatomy.gif" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-chunk-anatomy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4. Anatomía de un trozo de Código. Fuente: <a href="https://www.pipinghotdata.com/posts/2020-09-07-introducing-the-rstudio-ide-and-r-markdown/">Shannon Pileggi</a>
+</figcaption>
 </figure>
 </div>
 <p>Existen varias formas de insertar un chunk de código:</p>
@@ -440,8 +508,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>En nuestro ejemplo anterior podemos añadir el nombre del chunk como <code>1-numero-aleatorio</code>:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r 1-numero-aleatorio}</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="dv">5</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">seq</span>(n)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="in">n &lt;- 5</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="in">seq(n)</span></span>
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 1 2 3 4 5</code></pre>
@@ -466,12 +534,16 @@ knitr::kable(
   mtcars[1:5, ]
 )
 ```</code></pre>
-<p>obtenemos la <a href="#tbl-ejemplo-tabla">Tabla&nbsp;1</a></p>
+<p>obtenemos la <a href="#tbl-ejemplo-tabla" class="quarto-xref">Tabla&nbsp;1</a></p>
 <div class="cell">
+<div id="tbl-ejemplo-tabla" class="cell quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ejemplo-tabla-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabla&nbsp;1. Ejemplo de Tabla con <code>kable</code>
+</figcaption>
+<div aria-describedby="tbl-ejemplo-tabla-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="tbl-ejemplo-tabla" class="anchored">
-<table class="table table-sm table-striped small">
-<caption>Tabla&nbsp;1. Ejemplo de Tabla con <code>kable</code></caption>
+<table class="do-not-create-environment cell table table-sm table-striped small">
 <colgroup>
 <col style="width: 26%">
 <col style="width: 7%">
@@ -577,23 +649,33 @@ knitr::kable(
 </table>
 </div>
 </div>
+</figure>
+</div>
 </div>
 </section>
 </section>
 <section id="tejer-y-renderizar" class="level2" data-number="2.4">
 <h2 data-number="2.4" class="anchored" data-anchor-id="tejer-y-renderizar"><span class="header-section-number">2.4</span> Tejer y Renderizar</h2>
 <p>Finalmente, una vez que tenemos nuestro documento <code>.Rmd</code> escrito procedemos a tejer (<code>knit</code>) el documento para que se ejecute el código y los resultados se incluyan dentro de nuestro documento. <strong>Knit</strong> es el verbo que describe la combinación de los trozos de código, el código en línea, el markdown y la narrativa.</p>
-<p>Para ello en la parte superior del panel, hacer click en <code>Knit</code> directamente o desplegar las opciones de <code>Knit</code> y ejecutar la que mas nos convenga (<a href="#fig-knit">Figura&nbsp;5</a>, ver animación en <a href="#fig-knitting">Figura&nbsp;6</a>).</p>
-<div id="fig-knit" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="images/knit.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figura&nbsp;5. Opciones Knit</figcaption>
+<p>Para ello en la parte superior del panel, hacer click en <code>Knit</code> directamente o desplegar las opciones de <code>Knit</code> y ejecutar la que mas nos convenga (<a href="#fig-knit" class="quarto-xref">Figura&nbsp;5</a>, ver animación en <a href="#fig-knitting" class="quarto-xref">Figura&nbsp;6</a>).</p>
+<div id="fig-knit" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-knit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/knit.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-knit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;5. Opciones Knit
+</figcaption>
 </figure>
 </div>
-<div id="fig-knitting" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="gif/knitting.gif" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figura&nbsp;6. Knit (Tejer) un documento. Fuente: <a href="https://www.pipinghotdata.com/posts/2020-09-07-introducing-the-rstudio-ide-and-r-markdown/">Shannon Pileggi</a></figcaption>
+<div id="fig-knitting" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-knitting-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="gif/knitting.gif" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-knitting-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;6. Knit (Tejer) un documento. Fuente: <a href="https://www.pipinghotdata.com/posts/2020-09-07-introducing-the-rstudio-ide-and-r-markdown/">Shannon Pileggi</a>
+</figcaption>
 </figure>
 </div>
 </section>
@@ -716,10 +798,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -729,8 +810,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -743,6 +833,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -786,6 +995,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -811,6 +1021,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -871,6 +1107,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 

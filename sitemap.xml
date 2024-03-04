@@ -1,55 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://github.com/ajpelu/teach_ecoinformatica_ugr/modulos/version_control.html</loc>
-    <lastmod>2024-01-22T15:56:25.248Z</lastmod>
+    <loc>https://ajpelu.github.io/teach_ecoinformatica_ugr/slides/teach_primary_data/primary_search_biodiversity.html</loc>
+    <lastmod>2024-03-04T13:07:22.696Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/ajpelu/teach_ecoinformatica_ugr/slides/teach_repro/repro_reproducible_documents.html</loc>
-    <lastmod>2024-01-22T15:56:24.584Z</lastmod>
+    <loc>https://ajpelu.github.io/teach_ecoinformatica_ugr/slides/teach_repro/repro_reproducible_documents_slides.html</loc>
+    <lastmod>2024-03-04T13:07:22.728Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/ajpelu/teach_ecoinformatica_ugr/slides/teach_repro/repro_intro_slides.html</loc>
-    <lastmod>2024-01-22T15:56:22.284Z</lastmod>
+    <loc>https://ajpelu.github.io/teach_ecoinformatica_ugr/slides/teach_git/git_slides.html</loc>
+    <lastmod>2024-03-04T13:07:22.536Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/ajpelu/teach_ecoinformatica_ugr/practicas/repro_reproducible_documents_practicas.html</loc>
-    <lastmod>2024-01-22T15:56:20.956Z</lastmod>
+    <loc>https://ajpelu.github.io/teach_ecoinformatica_ugr/practicas/repro_reproducible_documents_practicas.html</loc>
+    <lastmod>2024-03-04T13:07:22.532Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/ajpelu/teach_ecoinformatica_ugr/practicas/repro_control_versiones_practicas.html</loc>
-    <lastmod>2024-01-22T15:56:20.172Z</lastmod>
+    <loc>https://ajpelu.github.io/teach_ecoinformatica_ugr/practicas/repro_control_versiones_practicas.html</loc>
+    <lastmod>2024-03-04T13:07:22.532Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/ajpelu/teach_ecoinformatica_ugr/index.html</loc>
-    <lastmod>2024-01-22T15:56:19.488Z</lastmod>
+    <loc>https://ajpelu.github.io/teach_ecoinformatica_ugr/modulos/reproducibilidad.html</loc>
+    <lastmod>2024-03-04T13:07:22.532Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/ajpelu/teach_ecoinformatica_ugr/about.html</loc>
-    <lastmod>2024-01-22T15:56:18.616Z</lastmod>
+    <loc>https://ajpelu.github.io/teach_ecoinformatica_ugr/index.html</loc>
+    <lastmod>2024-03-04T13:07:22.532Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/ajpelu/teach_ecoinformatica_ugr/modulos.html</loc>
-    <lastmod>2024-01-22T15:56:19.216Z</lastmod>
+    <loc>https://ajpelu.github.io/teach_ecoinformatica_ugr/about.html</loc>
+    <lastmod>2024-03-04T13:07:22.528Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/ajpelu/teach_ecoinformatica_ugr/horario.html</loc>
-    <lastmod>2024-01-22T15:56:19.788Z</lastmod>
+    <loc>https://ajpelu.github.io/teach_ecoinformatica_ugr/modulos.html</loc>
+    <lastmod>2024-03-04T13:07:22.532Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/ajpelu/teach_ecoinformatica_ugr/practicas/repro_reproducible_documents_ejemplo.html</loc>
-    <lastmod>2024-01-22T15:56:20.656Z</lastmod>
+    <loc>https://ajpelu.github.io/teach_ecoinformatica_ugr/modulos/version_control.html</loc>
+    <lastmod>2024-03-04T13:07:22.532Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/ajpelu/teach_ecoinformatica_ugr/slides/teach_git/git_slides.html</loc>
-    <lastmod>2024-01-22T15:56:21.856Z</lastmod>
+    <loc>https://ajpelu.github.io/teach_ecoinformatica_ugr/practicas/repro_reproducible_documents_ejemplo.html</loc>
+    <lastmod>2024-03-04T13:07:22.532Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/ajpelu/teach_ecoinformatica_ugr/slides/teach_repro/repro_reproducible_documents_slides.html</loc>
-    <lastmod>2024-01-22T15:56:23.380Z</lastmod>
+    <loc>https://ajpelu.github.io/teach_ecoinformatica_ugr/horario.html</loc>
+    <lastmod>2024-03-04T13:07:22.528Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/ajpelu/teach_ecoinformatica_ugr/modulos/reproducibilidad.html</loc>
-    <lastmod>2024-01-22T15:56:24.936Z</lastmod>
+    <loc>https://ajpelu.github.io/teach_ecoinformatica_ugr/slides/teach_repro/repro_intro_slides.html</loc>
+    <lastmod>2024-03-04T13:07:22.728Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ajpelu.github.io/teach_ecoinformatica_ugr/slides/teach_repro/repro_reproducible_documents.html</loc>
+    <lastmod>2024-03-04T13:07:22.728Z</lastmod>
   </url>
 </urlset>

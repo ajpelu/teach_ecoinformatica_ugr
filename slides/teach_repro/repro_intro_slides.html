@@ -8,7 +8,7 @@
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.3.450">
+  <meta name="generator" content="quarto-1.4.550">
 
   <meta name="author" content="Antonio J. Pérez-Luque">
   <meta name="dcterms.date" content="2024-01-16">
@@ -157,7 +157,8 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -344,7 +345,7 @@ Antonio J. Pérez-Luque
 <section id="cómo-definirías-la-ciencia" class="slide level2">
 <h2>¿Cómo definirías la ciencia?</h2>
 
-<img data-src="images/repro-science.jpg" class="r-stretch quarto-figure-center"></section>
+<img data-src="images/repro-science.jpg" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="ciencia" class="slide level2">
 <h2>Ciencia</h2>
 <div class="small">
@@ -360,7 +361,7 @@ Antonio J. Pérez-Luque
 <section class="slide level2">
 
 
-<img data-src="images/repro-metodo-cientifico-bebe.jpg" class="r-stretch quarto-figure-center"></section>
+<img data-src="images/repro-metodo-cientifico-bebe.jpg" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="crisis-de-reproducibilidad" class="slide level2">
 <h2>Crisis de Reproducibilidad</h2>
 
@@ -385,11 +386,11 @@ Antonio J. Pérez-Luque
 <section id="mismos-datos-mismos-resultados" class="slide level2">
 <h2>¿mismos datos = mismos resultados?</h2>
 
-<img data-src="images/repro-trial.png" class="r-stretch quarto-figure-center"></section>
+<img data-src="images/repro-trial.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="problema-actual" class="slide level2">
 <h2>¿problema actual?</h2>
 
-<img data-src="images/repro-crisis-twitter.png" class="r-stretch quarto-figure-center"><aside class="notes">
+<img data-src="images/repro-crisis-twitter.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
 <ul>
 <li>No es un problema de ahora. Ya en 1830 el físico Charles Babbage publicó una obra sobre el declive de la ciencia</li>
 </ul>
@@ -451,7 +452,7 @@ Antonio J. Pérez-Luque
 </blockquote>
 </div>
 
-<img data-src="images/repro-reproducible-matrix.jpeg" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html">The Turing way</a></p><aside class="notes">
+<img data-src="images/repro-reproducible-matrix.jpeg" class="quarto-figure quarto-figure-center r-stretch"><p class="caption"><a href="https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html">The Turing way</a></p><aside class="notes">
 <ul>
 <li><p>Un resultado es <em>reproducible</em> cuando los mismos pasos de análisis realizados en el mismo conjunto de datos producen sistemáticamente la misma respuesta.</p></li>
 <li><p>A result is replicable when the same analysis performed on different datasets produces qualitatively similar answers.</p></li>
@@ -472,7 +473,7 @@ Antonio J. Pérez-Luque
 <section id="gradiente-de-reproducibilidad" class="slide level2">
 <h2>Gradiente de Reproducibilidad</h2>
 
-<img data-src="images/repro-gradiente.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="http://doi.org/10.7818/ECOS.2016.25-2.11">Rodríguez-Sánchez et al.&nbsp;2016</a></p></section>
+<img data-src="images/repro-gradiente.png" class="quarto-figure quarto-figure-center r-stretch"><p class="caption"><a href="http://doi.org/10.7818/ECOS.2016.25-2.11">Rodríguez-Sánchez et al.&nbsp;2016</a></p></section>
 <section class="slide level2">
 
 <h3 id="flujo-de-trabajo-reproducible-ventajas-i">Flujo de trabajo reproducible: ventajas (I)</h3>
@@ -508,7 +509,7 @@ Antonio J. Pérez-Luque
 <section id="reproducibilidad-barreras" class="slide level2">
 <h2>Reproducibilidad: Barreras</h2>
 
-<img data-src="images/repro-barriers.png" class="r-stretch quarto-figure-center"><p class="caption">Fuente: <a href="https://youtu.be/wZeoZaIV0VE?t=312">Kirstie Whitaker</a></p></section>
+<img data-src="images/repro-barriers.png" class="quarto-figure quarto-figure-center r-stretch"><p class="caption">Fuente: <a href="https://youtu.be/wZeoZaIV0VE?t=312">Kirstie Whitaker</a></p></section>
 <section id="reproducibilidad-costes" class="slide level2">
 <h2>Reproducibilidad: Costes</h2>
 
@@ -545,7 +546,7 @@ Antonio J. Pérez-Luque
 <h2>Recursos</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/repro-british.png" height="500"></p>
+<p><img data-src="images/repro-british.png" class="quarto-figure quarto-figure-center" height="500"></p>
 </figure>
 </div>
 <div class="small">
@@ -568,13 +569,15 @@ Antonio J. Pérez-Luque
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/logo-jdc.png"></p>
+<p><img data-src="images/logo-jdc.png" class="quarto-figure quarto-figure-center"></p>
 </figure>
 </div>
 
+<div class="quarto-auto-generated-content">
 <p><img src="images/logo-ugr.png" class="slide-logo"></p>
 <div class="footer footer-default">
 <p>Master Universitario en Conservación, Gestión y Restauración de la Biodiversidad</p>
+</div>
 </div>
 </section></section>
 
@@ -606,7 +609,6 @@ Antonio J. Pérez-Luque
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': false,
-'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -868,10 +870,9 @@ Antonio J. Pérez-Luque
         // clear code selection
         e.clearSelection();
       });
-      function tippyHover(el, contentFn) {
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
-          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -881,8 +882,17 @@ Antonio J. Pérez-Luque
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start'
+          placement: 'bottom-start',
         };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 

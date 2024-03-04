@@ -1,1 +1,1 @@
-Sitemap: https://github.com/ajpelu/teach_ecoinformatica_ugr/sitemap.xml
+Sitemap: https://ajpelu.github.io/teach_ecoinformatica_ugr/sitemap.xml

@@ -11,8 +11,8 @@
   <meta name="generator" content="quarto-1.4.550">
 
   <meta name="author" content="Antonio J. Pérez-Luque">
-  <meta name="dcterms.date" content="2024-01-22">
-  <title>Ciclo de Gestión de los Datos. Ecoinformática - Control de Versiones con Git y GitHub</title>
+  <meta name="dcterms.date" content="2024-03-04">
+  <title>Ciclo de Gestión de los Datos. Ecoinformática - Búsqueda de Datos primarios de Biodiversidad</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -30,71 +30,6 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for syntax highlighting */
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #767676;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #767676;  padding-left: 4px; }
-    div.sourceCode
-      { color: #545454; background-color: #fefefe; }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #545454; } /* Normal */
-    code span.al { color: #7928a1; } /* Alert */
-    code span.an { color: #696969; } /* Annotation */
-    code span.at { color: #a55a00; } /* Attribute */
-    code span.bn { color: #7928a1; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #d91e18; } /* ControlFlow */
-    code span.ch { color: #008000; } /* Char */
-    code span.cn { color: #d91e18; } /* Constant */
-    code span.co { color: #696969; } /* Comment */
-    code span.cv { color: #696969; font-style: italic; } /* CommentVar */
-    code span.do { color: #696969; font-style: italic; } /* Documentation */
-    code span.dt { color: #7928a1; } /* DataType */
-    code span.dv { color: #7928a1; } /* DecVal */
-    code span.er { color: #7928a1; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #a55a00; } /* Float */
-    code span.fu { color: #06287e; } /* Function */
-    code span.im { } /* Import */
-    code span.in { color: #696969; } /* Information */
-    code span.kw { color: #d91e18; } /* Keyword */
-    code span.op { color: #00769e; } /* Operator */
-    code span.ot { color: #d91e18; } /* Other */
-    code span.pp { color: #7928a1; } /* Preprocessor */
-    code span.sc { color: #00769e; } /* SpecialChar */
-    code span.ss { color: #008000; } /* SpecialString */
-    code span.st { color: #008000; } /* String */
-    code span.va { color: #a55a00; } /* Variable */
-    code span.vs { color: #008000; } /* VerbatimString */
-    code span.wa { color: #696969; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -392,7 +327,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Control de Versiones con Git y GitHub</h1>
+  <h1 class="title">Búsqueda de Datos primarios de Biodiversidad</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -405,231 +340,24 @@ Antonio J. Pérez-Luque
     </div>
 </div>
 
-  <p class="date">January 22, 2024</p>
+  <p class="date">March 4, 2024</p>
 </section>
 <section>
-<section id="has-experimentado-alguna-de-estas-situaciones-en-tu-trabajo-diario" class="title-slide slide level1 center">
-<h1>¿Has experimentado alguna de estas situaciones en tu trabajo diario?</h1>
+<section id="dónde-buscar-datos-de-biodiversidad" class="title-slide slide level1 center">
+<h1>¿Dónde buscar datos de Biodiversidad?</h1>
 
 </section>
-<section class="slide level2">
-
-
-<img data-src="images/final_doc.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="http://phdcomics.com/">phdcomic</a></p></section>
-<section class="slide level2">
-
-
-<img data-src="images/tracker.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://scottadams.locals.com/">Scott Adams</a></p></section>
-<section class="slide level2">
-
-
-<img data-src="images/astorytold.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="http://phdcomics.com/">phdcomic</a></p></section>
-<section id="qué-es-el-control-de-versiones" class="slide level2">
-<h2>¿Qué es el control de versiones?</h2>
-<p>El <strong>control de versiones</strong> es un sistema que registra los cambios realizados sobre un archivo o conjunto de archivos a lo largo del tiempo, de modo que podamos recuperar versiones específicas más adelante</p>
+<section id="portal-de-datos-de-gbif" class="slide level2 small">
+<h2>Portal de datos de GBIF</h2>
 <ul>
-<li>Se puede utilizar sobre cualquier archivo.</li>
-<li>Permite:
-<ul>
-<li>Revertir archivos (proyecto) a un estado anterior</li>
-<li>Comparar cambios a lo largo del tiempo</li>
-</ul></li>
-<li>Facilita la identificación de errores</li>
+<li><p>Ir al portal de datos de <a href="http://datos.gbif.es" class="uri">http://datos.gbif.es</a></p></li>
+<li><p>Realiza una búsqueda por el nombre de un taxon, <em>e.g.</em> <em>Quercus pyrenaica</em>, en la barra de búsqueda y clica en el botón de búsqueda</p></li>
 </ul>
-</section>
-<section id="registro-de-cambios" class="slide level2">
-<h2>Registro de cambios</h2>
 
-<img data-src="images/carp-changes.svg" class="r-stretch"></section>
-<section id="registro-de-cambios-varios-usuarios" class="slide level2 small">
-<h2>Registro de cambios (varios usuarios)</h2>
-
-<img data-src="images/carp-two-users.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="integración-de-cambios" class="slide level2">
-<h2>Integración de cambios</h2>
-
-<img data-src="images/carp-merge.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="sistemas-para-el-control-de-versiones" class="slide level2">
-<h2>Sistemas para el control de versiones</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/git_logo.png" class="quarto-figure quarto-figure-center" width="600" height="251"></p>
-</figure>
-</div>
-<ul>
-<li><a href="http://git-scm.com/book/en/v2">ProGit book</a></li>
-<li>Otros:
-<ul>
-<li><a href="https://subversion.apache.org/">Subversion</a></li>
-<li>Concurrent Version System <a href="https://www.nongnu.org/cvs/">CVS</a></li>
-</ul></li>
-</ul>
-</section>
-<section id="git" class="slide level2">
-<h2>Git</h2>
-<ul>
-<li>Sistema avanzado de control de versiones distribuido</li>
-<li>Permite <strong>rastrear</strong> el progreso de un proyecto mediante <strong>capturas</strong>
-<ul>
-<li><strong>¿Qué cambios?</strong></li>
-<li><strong>¿Dónde?</strong></li>
-<li><strong>¿Quién los hizo?</strong></li>
-<li><strong>¿Por qué?</strong></li>
-</ul></li>
-</ul>
-</section>
-<section class="slide level2">
-
-
-<img data-src="images/git-distributed.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://wdevon99.medium.com/git-under-the-hood-26b46a47393c">Devon Wijesinghe</a></p></section>
-<section id="github" class="slide level2">
-<h2>GitHub</h2>
-<div class="columns">
-<div class="column" style="width:60%;">
+<img data-src="images/portal-datos.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="http://datos.gbif.es">GBIF.es</a></p></section>
+<section id="resultados" class="slide level2">
+<h2>Resultados</h2>
 <div class="small">
-<ul>
-<li>Un website donde alojar repositorios</li>
-<li>Interfaz para explorar repositorios</li>
-<li>Permite colaborar de una forma más eficaz:
-<ul>
-<li>Compartir repositorio</li>
-<li>Ver cambios</li>
-<li>Corregir errores</li>
-<li>Discutir y Revisar cambios</li>
-</ul></li>
-</ul>
-</div>
-</div><div class="column" style="width:40%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/github_logo.png" class="quarto-figure quarto-figure-center" width="350" height="300"></p>
-</figure>
-</div>
-<p><a href="https://github.com/" class="uri">https://github.com/</a></p>
-</div>
-</div>
-</section>
-<section id="recursos-sobre-git" class="slide level2">
-<h2>Recursos sobre Git</h2>
-<div class="small">
-<ul>
-<li><a href="https://try.github.io/levels/1/challenges/1">Interactive Tutorial Git (CodeSchool)</a></li>
-<li><a href="http://rogerdudler.github.io/git-guide/index.es.html">Git - the simple guide (Roger Dudler)</a></li>
-<li><a href="http://r-pkgs.had.co.nz/git.html">Git and GitHub (Hadley Wickham)</a></li>
-<li><a href="https://www.biostat.wisc.edu/~kbroman/talks/GitPrimer.pdf">A brief introduction to git &amp; GitHub (Karl Broman &amp; Samuel G. Younkin)</a></li>
-<li><a href="http://jonlefcheck.net/2013/11/04/a-basic-tutorial-to-version-control-using-git/">A basic tutorial to version control using git (Jon Lefcheck)</a></li>
-<li><a href="http://kbroman.org/github_tutorial/">Git/Github guide a minimal tutorial (Karl Broman)</a></li>
-<li><a href="https://www.atlassian.com/git/tutorials/setting-up-a-repository">Getting Git Right (Atlassian)</a></li>
-<li><a href="https://gist.github.com/Pakillo/63c15c700c9c76fe8032">Recopilación de tutoriales (F. Rodríguez-Sánchez)</a></li>
-<li><a href="https://marklodato.github.io/visual-git-guide/index-es.html">Guía Visual de Git</a></li>
-<li><a href="https://juancuiule.github.io/intro-a-git/">Introducción al funcionamiento y uso de git y github</a></li>
-</ul>
-</div>
-</section>
-<section id="ciclo-de-git" class="slide level2">
-<h2>Ciclo de Git</h2>
-
-<img data-src="images/git-cycle-allison.png" class="quarto-figure quarto-figure-center r-stretch" width="2000"><p class="caption">Artwork by <a href="https://github.com/allisonhorst">Allison_horst</a></p></section>
-<section id="ciclo-de-git-1" class="slide level2">
-<h2>Ciclo de Git</h2>
-
-<img data-src="images/git-workflow.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://meralus.com/git-pull-all/">T. Meralus</a></p></section>
-<section id="instalar-git" class="slide level2">
-<h2>Instalar Git</h2>
-<div class="small">
-<ul>
-<li>Instala Git en tu ordenador. Puedes usar la <a href="https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Instalaci%C3%B3n-de-Git">documentación oficial</a></li>
-</ul>
-</div>
-<h4 id="configurar-git">Configurar Git</h4>
-<div class="panel-tabset">
-<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Código</a></li><li><a href="#tabset-1-2">Ejemplo</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1">
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a></a><span class="fu">git</span> config <span class="at">--global</span> user.name </span>
-<span id="cb1-2"><a></a><span class="fu">git</span> config <span class="at">--global</span> user.email </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="tabset-1-2">
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a></a><span class="fu">git</span> config <span class="at">--global</span> user.name <span class="st">"Fulanito Menganito"</span></span>
-<span id="cb2-2"><a></a><span class="fu">git</span> config <span class="at">--global</span> user.email micorreo@gmail.com</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-</div>
-<div class="small">
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Note</strong></p>
-</div>
-<div class="callout-content">
-<p>Vamos a usar Github, por tanto la dirección de correo que indiques ha de ser la misma con la que te registres en GitHub.</p>
-</div>
-</div>
-</div>
-<ul>
-<li>En cualquier momento podemos ver las opciones de configuración</li>
-</ul>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a></a><span class="fu">git</span> config <span class="at">--list</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="crear-un-repositorio-nuevo" class="slide level2">
-<h2>Crear un repositorio nuevo</h2>
-<ul>
-<li>Abre la <a href="https://linube.com/ayuda/articulo/174/abrir-una-consola-de-comandos">consola de comandos</a></li>
-<li>Crea un directorio nuevo y ábrelo<sup>1</sup></li>
-</ul>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a></a><span class="fu">mkdir</span> <span class="op">&lt;</span>nombre_directorio<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><br></p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a></a><span class="fu">mkdir</span> datos</span>
-<span id="cb5-2"><a></a><span class="bu">cd</span> datos</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<aside><ol class="aside-footnotes"><li id="fn1"><p><a href="http://overapi.com/linux/">Ayuda sobre comandos</a></p></li></ol></aside></section>
-<section id="iniciar-un-repositorio" class="slide level2">
-<h2>Iniciar un repositorio</h2>
-<ul>
-<li>Para <strong>iniciar un repositorio</strong> utilizamos el comando</li>
-</ul>
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a></a><span class="fu">git</span> init nombrerepositorio</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><br></p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a></a><span class="fu">git</span> init mi_primer_repositorio</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Note</strong></p>
-</div>
-<div class="callout-content">
-<p>¿Que ha ocurrido en nuestro directorio?</p>
-</div>
-</div>
-</div>
-<ul>
-<li>Inspeccionar el directorio</li>
-</ul>
-<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a></a><span class="bu">cd</span> mi_primer_repositorio</span>
-<span id="cb8-2"><a></a><span class="fu">ls</span> <span class="at">-a</span> </span>
-<span id="cb8-3"><a></a><span class="bu">cd</span> .git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="añadir-cambios" class="slide level2">
-<h2>Añadir cambios</h2>
-<ul>
-<li><p>Crea un archivo de texto dentro del directorio, escribe algo y nómbralo <strong>miarchivo.txt</strong></p></li>
-<li><p>Añade el archivo a la <strong>staging area</strong></p></li>
-</ul>
-<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a></a><span class="fu">git</span> add <span class="op">&lt;</span>nombre_archivo<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a></a><span class="fu">git</span> add miarchivo.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ul>
-<li>Si quiero añadir todos los archivos</li>
-</ul>
-<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a></a><span class="fu">git</span> add . </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="registrar-cambios" class="slide level2">
-<h2>Registrar cambios</h2>
-<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Commit message""</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="callout callout-important callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -639,190 +367,151 @@ Antonio J. Pérez-Luque
 <p><strong>Important</strong></p>
 </div>
 <div class="callout-content">
-<p>El mensaje nos servirá para indicar lo que hemos hecho.</p>
+<p>Los resultados de la búsqueda se filtran ahora por defecto para excluir los registros de menor calidad de acuerdo con el perfil de datos General de GBIF.ES</p>
+</div>
+</div>
+</div>
+</div>
 <ul>
-<li><a href="https://midu.dev/buenas-practicas-escribir-commits-git/">Recomendaciones</a> de buenas prácticas para commits</li>
-<li><a href="https://www.conventionalcommits.org/en/v1.0.0/">Algunas convenciones para commits</a></li>
+<li>Usar perfil de Datos</li>
+<li>Aplicar Filtros de Calidad</li>
 </ul>
-</div>
-</div>
-</div>
-<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Escribo mis datos personales en archivo"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><br></p>
-<pre><code>[master (root-commit) 71fe224] Escribo mis datos personales en archivo
- 1 file changed, 2 insertions(+)
- create mode 100644 miarchivo.txt</code></pre>
 </section>
-<section id="section" class="slide level2">
-<h2></h2>
+<section id="resultados-perfil-de-datos" class="slide level2">
+<h2>Resultados: Perfil de Datos</h2>
 
-<img data-src="images/git-escalada.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://allisonhorst.com/git-github">Allison_horst</a></p></section>
-<section id="section-1" class="slide level2">
-<h2></h2>
+<img data-src="images/portal-filtros.png" class="r-stretch"></section>
+<section id="opciones-de-resultados-registros" class="slide level2">
+<h2>Opciones de Resultados: Registros</h2>
 
-<img data-src="images/git-escalada-caida.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://allisonhorst.com/git-github">Allison_horst</a></p></section>
-<section id="section-2" class="slide level2">
-<h2></h2>
+<img data-src="images/resultados-registros.png" class="r-stretch"></section>
+<section id="opciones-de-resultados-mapa" class="slide level2">
+<h2>Opciones de Resultados: Mapa</h2>
 
-<img data-src="images/git-workflow.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://meralus.com/git-pull-all/">T. Meralus</a></p></section>
-<section id="enviar-cambios-a-repositorios-remotos" class="slide level2">
-<h2>Enviar cambios a Repositorios Remotos</h2>
+<img data-src="images/resultados-mapa.png" class="r-stretch"></section>
+<section id="opciones-de-resultados-estadísticas" class="slide level2">
+<h2>Opciones de Resultados: Estadísticas</h2>
+
+<img data-src="images/resultados-stats.png" class="r-stretch"></section>
+<section id="opciones-de-resultados-imágenes" class="slide level2">
+<h2>Opciones de Resultados: Imágenes</h2>
+
+<img data-src="images/resultados-imagenes.png" class="r-stretch"></section>
+<section id="opciones-de-resultados-imágenes-1" class="slide level2">
+<h2>Opciones de Resultados: Imágenes</h2>
+
+<img data-src="images/resultados-imagenes-detail.png" class="r-stretch"></section>
+<section id="filtrar-resultados" class="slide level2 small">
+<h2>Filtrar Resultados</h2>
 <ul>
-<li>Nuestros cambios están en el <strong><code>HEAD</code></strong> (copia local)</li>
-<li>Queremos enviar los cambios a un <strong>repositorio remoto</strong></li>
+<li><p>Por Perfil de Datos</p></li>
+<li><p>Usando campos del estándar Darwin Core (personalizar filtros)</p></li>
 </ul>
-<div class="callout callout-caution callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Caution</strong></p>
-</div>
-<div class="callout-content">
-<p>Necesitamos un repositorio remoto (GitHub):</p>
+
+<img data-src="images/filtros-seleccion.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="exportar-datos-descarga" class="slide level2">
+<h2>Exportar datos: Descarga</h2>
 <ul>
-<li>Crear</li>
-<li>Clonar</li>
+<li><p>Necesita registro</p></li>
+<li><p>Crear cuenta</p></li>
 </ul>
-</div>
-</div>
-</div>
-<div class="sourceCode" id="cb15"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a></a><span class="fu">git</span> remote add origin <span class="op">&lt;</span>url server<span class="op">&gt;</span></span>
-<span id="cb15-2"><a></a></span>
-<span id="cb15-3"><a></a><span class="fu">git</span> remote add origin https://github.com/ajpelu/teach_git_ejemplo.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+<img data-src="images/descarga-registro.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="exportar-datos-descarga-1" class="slide level2">
+<h2>Exportar datos: Descarga</h2>
+
+<img data-src="images/descarga.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="exportar-datos-descarga-2" class="slide level2">
+<h2>Exportar datos: Descarga</h2>
+<ul>
+<li>Personalizar Descarga</li>
+</ul>
+
+<img data-src="images/descarga-opciones.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="api-application-programming-interface" class="slide level2">
+<h2>API (<em>Application Programming Interface</em>)</h2>
+
+<img data-src="images/rest-api.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://mannhowie.com/rest-api">Howie Mann</a></p></section>
+<section id="uso-de-apis-en-gbif" class="slide level2">
+<h2>Uso de APIs en GBIF</h2>
+<iframe data-external="1" src="https://www.youtube.com/embed/a9ZrqdJArc8" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<p><a href="https://www.youtube.com/watch?v=a9ZrqdJArc8">I Mini Taller portal de GBIF Internacional (05/03/2014)</a></p>
 </section>
-<section id="crear-repositorio-en-github" class="slide level2">
-<h2>Crear repositorio en GitHub</h2>
+<section class="slide level2">
 
-<img data-src="images/crea_repo.gif" class="r-stretch"></section>
-<section id="section-3" class="slide level2">
-<h2></h2>
-
-<img data-src="images/github-julen.jpeg" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://github.com/Julenasti">Julen Astigarraga</a></p></section>
-<section id="section-4" class="slide level2">
-<h2></h2>
-
-<img data-src="images/github-julen2.jpeg" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://github.com/Julenasti">Julen Astigarraga</a></p></section>
-<section id="enlazar-repositorio-local-y-remoto" class="slide level2">
-<h2>Enlazar repositorio local y remoto</h2>
-<p><br> URL: <br> <strong>https://github.com/ajpelu/teach_git_ejemplo.git</strong></p>
-<p><br></p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a></a><span class="fu">git</span> remote add origin <span class="op">&lt;</span>url server<span class="op">&gt;</span></span>
-<span id="cb16-2"><a></a><span class="fu">git</span> remote add origin https://github.com/ajpelu/teach_git_ejemplo.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="enviar" class="slide level2">
-<h2>Enviar</h2>
+<h3 class="small" id="gbif-api.-ejemplo">GBIF API. Ejemplo</h3>
 <div class="small">
+<p><span style="color:green;">https://api.gbif.org/v1</span>/<span style="color:orange;">species</span>/<span style="color:blue;">match?</span>name=<span style="color:red;">Quercus pyrenaica</span></p>
 <ul>
-<li>Para enviar cambios (una vez conectados) a un repositorio remoto</li>
-<li>Nos pedirá usuario y contraseña</li>
+<li>URL base: <span style="color:green;">https://api.gbif.org/v1</span></li>
+<li><span style="color:orange;">Grupo/Namespace</span> que queremos consultar: species, occurrences, etc. Mas información en <a href="https://techdocs.gbif.org/en/openapi/">documentación de Referencia</a></li>
+<li><span style="color:blue;">Función</span>: funcionalidad a usar: buscar (<em>search</em>), coincidencia (<em>match</em>), etc.</li>
+<li><span style="color:black;">Parámetro</span>: los parámetros para nuestra llamada: <em>e.g.</em> name.</li>
+<li><span style="color:red;">consulta</span>: la consulta dentro de dicho parámetro</li>
 </ul>
 </div>
-<div class="sourceCode" id="cb17"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a></a><span class="fu">git</span> push origin master</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-warning callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Warning</strong></p>
-</div>
-<div class="callout-content">
-<div class="sourceCode" id="cb18"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb18-1"><a></a><span class="fu">git</span> push origin</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb19"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb19-1"><a></a><span class="fu">git</span> push origin master</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><a href="https://www.geeksforgeeks.org/difference-between-git-push-origin-and-git-push-origin-master/">¿Qué rama queremos sincronizar?</a></p>
-</div>
-</div>
-</div>
-
-<img data-src="images/git-push.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="clonar-un-repositorio" class="slide level2">
-<h2>Clonar un repositorio</h2>
-
-<img data-src="images/clon_repo.gif" class="r-stretch"></section>
-<section id="clonar-un-repositorio-1" class="slide level2">
-<h2>Clonar un repositorio</h2>
+<h3 id="documentación-oficial">Documentación Oficial</h3>
 <ul>
-<li>Importante para reproducibilidad</li>
-<li>Colaboración</li>
-<li>Repositorio remoto (<code>GitHub</code>)</li>
-<li>2 formas (<a href="https://www.howtogeek.com/devops/should-you-use-https-or-ssh-for-git/">diferencias</a>)</li>
+<li><p><a href="https://techdocs.gbif.org/en/openapi/">Documentación de Referencia</a></p></li>
+<li><p><a href="https://data-blog.gbif.org/post/gbif-api-beginners-guide/">Tutorial para principiantes</a></p></li>
 </ul>
-<div class="panel-tabset">
-<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">HTTPS</a></li><li><a href="#tabset-2-2">SSH</a></li></ul>
-<div class="tab-content">
-<div id="tabset-2-1">
-<div class="sourceCode" id="cb20"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb20-1"><a></a><span class="co"># git clone &lt;url&gt; </span></span>
-<span id="cb20-2"><a></a><span class="fu">git</span> clone https://github.com/ajpelu/teach_git_ejemplo.git </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="tabset-2-2">
-<div class="sourceCode" id="cb21"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb21-1"><a></a><span class="co"># git clone username@host:/path/to/repository</span></span>
-<span id="cb21-2"><a></a><span class="fu">git</span> clone git@github.com:ajpelu/teach_git_ejemplo.git </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-</div>
 </section>
-<section id="actualizar-un-repositorio-local" class="slide level2">
-<h2>Actualizar un repositorio local</h2>
-
-<img data-src="images/git-fetch.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://github.com/allisonhorst">Allison_horst</a></p></section>
-<section id="actualizar-un-repositorio-local-1" class="slide level2">
-<h2>Actualizar un repositorio local</h2>
-<div class="small">
-<p>¿Existe alguna información nueva en mi repositorio remoto?</p>
-</div>
-<div class="sourceCode" id="cb22"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb22-1"><a></a><span class="fu">git</span> fetch  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="small">
-<p>¿Existe alguna información nueva en mi repositorio remoto y quiero que esté en mi repositorio local?</p>
-</div>
-<div class="sourceCode" id="cb23"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb23-1"><a></a><span class="fu">git</span> pull  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-warning callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Warning</strong></p>
-</div>
-<div class="callout-content">
-<ul>
-<li>Prestar atención a la rama!!</li>
-</ul>
-<div class="sourceCode" id="cb24"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb24-1"><a></a><span class="fu">git</span> pull origin master </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-</div>
+<section id="resultado-archivo-json" class="slide level2">
+<h2>Resultado: Archivo JSON</h2>
+<pre><code>{
+  "usageKey": 2878826,
+  "scientificName": "Quercus pyrenaica Willd.",
+  "canonicalName": "Quercus pyrenaica",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "confidence": 97,
+  "matchType": "EXACT",
+  "kingdom": "Plantae",
+  "phylum": "Tracheophyta",
+  "order": "Fagales",
+  "family": "Fagaceae",
+  "genus": "Quercus",
+  "species": "Quercus pyrenaica",
+  "kingdomKey": 6,
+  "phylumKey": 7707728,
+  "classKey": 220,
+  "orderKey": 1354,
+  "familyKey": 4689,
+  "genusKey": 2877951,
+  "speciesKey": 2878826,
+  "synonym": false,
+  "class": "Magnoliopsida"
+}</code></pre>
 </section>
-<section id="otros-comandos" class="slide level2">
-<h2>Otros comandos</h2>
+<section id="exportación-de-nuestra-búsqueda" class="slide level2">
+<h2>Exportación de nuestra búsqueda</h2>
+<div class="small">
+<p><a href="https://registros-ws.gbif.es/occurrences/search?q=lsid%3A2878826&amp;qualityProfile=LA">https://registros-ws.gbif.es/occurrences/search?q=lsid%3A2878826&amp;qualityProfile=LA</a></p>
+</div>
 
-<img data-src="images/cheat-git.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="anexo.-formas-de-usar-git-shell" class="slide level2">
-<h2>Anexo. Formas de usar git: <strong>shell</strong></h2>
+<img data-src="images/json-qp.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="exportación-de-nuestra-búsqueda-1" class="slide level2">
+<h2>Exportación de nuestra búsqueda</h2>
+<div class="small">
+<p><a href="https://registros-ws.gbif.es/occurrences/search?q=lsid%3A2878826&amp;qualityProfile=LA">https://registros-ws.gbif.es/occurrences/search?q=lsid%3A2878826&amp;qualityProfile=LA</a></p>
+</div>
 
-<img data-src="images/git-for-windows.png" class="quarto-figure quarto-figure-center r-stretch"><p class="caption"><a href="https://gitforwindows.org/">Git for Windows</a></p></section>
-<section id="anexo.-formas-de-usar-git-git-gui" class="slide level2">
-<h2>Anexo. Formas de usar git: <strong>git-GUI</strong></h2>
+<img data-src="images/json-qp-formatted.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="tipos-de-búsquedas" class="slide level2">
+<h2>Tipos de búsquedas:</h2>
 <ul>
-<li>Clientes de <a href="https://git-scm.com/downloads/guis">git GUI</a> (Guest User Interfaces)</li>
+<li><p>Simple</p></li>
+<li><p>Avanzada</p></li>
+<li><p>Por nombres científicos (lotes)</p></li>
+<li><p>Por números de catálogo</p></li>
+<li><p>Eventos</p></li>
+<li><p>Espacial (Área)</p></li>
 </ul>
-
-<img data-src="images/github-desktop.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="anexo.-formas-de-usar-git-r-studio" class="slide level2">
-<h2>Anexo. Formas de usar git: <strong>R-studio</strong></h2>
-<p><a href="https://happygitwithr.com/">https://happygitwithr.com/</a></p>
-<p>
-<a href="https://posit.co/resources/videos/happy-git-and-gihub-for-the-user-tutorial/?wvideo=dusx6e0tkp"><img src="https://embed-ssl.wistia.com/deliveries/eaee342e574c4ab3a17685075a50f82c.jpg?image_play_button_size=2x&amp;image_crop_resized=960x540&amp;image_play_button=1&amp;image_play_button_color=71aadbe0" width="400" height="225" style="width: 400px; height: 225px;"></a>
-</p>
-<p>
-<a href="https://posit.co/resources/videos/happy-git-and-gihub-for-the-user-tutorial/?wvideo=dusx6e0tkp">Happy Git and Gihub for the useR Tutorial - Posit</a>
-</p>
 </section>
 <section id="alguna-duda" class="slide level2">
 <h2>¿Alguna duda?</h2>
 <ul>
-<li><a href="https://twitter.com/ajpelu"><span class="citation" data-cites="ajpelu">@ajpelu</span></a></li>
+<li><a href="https://twitter.com/ajpelu">@ajpelu</a></li>
 <li><a href="mailto:%20antonio.perez@inia.csic.es">antonio.perez@inia.csic.es</a></li>
 </ul>
 <div class="small">
@@ -841,7 +530,6 @@ Antonio J. Pérez-Luque
 </div>
 </div>
 </section></section>
-
     </div>
   </div>
 
@@ -875,7 +563,7 @@ Antonio J. Pérez-Luque
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'multiplex': {"secret":null,"id":"f5a44f5e479a2b31","url":"https://reveal-multiplex.glitch.me/"},
+'multiplex': {"secret":null,"id":"05dea5bc5d757418","url":"https://reveal-multiplex.glitch.me/"},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -1055,44 +743,6 @@ Antonio J. Pérez-Luque
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
