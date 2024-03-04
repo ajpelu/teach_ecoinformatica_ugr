@@ -60,7 +60,7 @@ crossref:
 
 4.  En el menú de la izquierda, usa el filtro ***Location*** y especifica la opción ***Geometry*** (@fig-wkt).
 
-![Inclusión del archivo espacial para realizar la búsqueda](images/primary-wkt.png){height=600 #fig-wkt}
+![Inclusión del archivo espacial para realizar la búsqueda](images/primary-wkt.png){#fig-wkt height="600"}
 
 5.  Incluye la delimitación de Sierra Nevada usando el archivo WKT indicado previamente (@fig-map).
 
@@ -69,7 +69,6 @@ crossref:
 6.  Descarga la búsqueda. Recuerda que te pedirá que te identifiques para realizar la descarga (@fig-download)
 
 ![Vista de la descarga de los resultados](images/primary-download.png){#fig-download}
-
 
 ::: {.callout-note appearance="simple"}
 ## Entrega
