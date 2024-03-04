@@ -178,6 +178,50 @@ Los resultados de la búsqueda se filtran ahora por defecto para excluir los reg
 
 -   Espacial (Área)
 
+## Búsqueda Espacial
+
+![](images/spatial.png){fig-align="center"}
+
+## Tipos de búsquedas espaciales
+
+- Dibujar un área de interés
+
+- Importar un área: 
+
+  - formato WKT ([Well Known Text](http://en.wikipedia.org/wiki/Well-known_text))
+
+- Regiones definidas 
+
+## Dibujar un área de interés
+
+![](images/spatial-custom.png){fig-align="center"}
+
+
+## Dibujar un área de interés (resultados)
+
+![](images/spatial-custom-output.png){fig-align="center"}
+
+## WKT 
+
+- Definir area usando un archivo  [WKT](https://raw.githubusercontent.com/ajpelu/teach_ecoinformatica_ugr/main/slides/teach_primary_data/images/sn_wkt.txt) 
+
+![](images/spatial-wkt-sn.png){fig-align="center"}
+
+## Regiones Definidas
+
+- Ir a Regiones o visitar [https://regiones.gbif.es/](https://regiones.gbif.es/)
+
+![](images/spatial-regiones.png){fig-align="center"}
+
+
+## Regiones Definidas
+
+- Seleccionar Región Definida
+
+![](images/spatial-regiones-output.png){fig-align="center"}
+
+
+
 ## ¿Alguna duda?
 
 -   [\@ajpelu](https://twitter.com/ajpelu)

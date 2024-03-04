@@ -1,0 +1,32 @@
+---
+title: "Módulo Datos Primarios de Biodiversidad"
+description: "19 Febrero - 6 Marzo 2024"
+author: ""
+date: ""
+listing:
+  - id: slides
+    contents:
+      - ../slides/teach_primary_data/*.qmd
+    type: table
+    fields: [title, date]
+    date-format: "ddd, MMM DD"
+    field-display-names:
+      title: "Nombre"
+      date: "Fecha"
+    sort: [date]
+    sort-ui: false
+    filter-ui: false
+tbl-colwidths: [10,50,40]
+---
+
+# Materiales
+
+::: {#slides}
+:::
+
+# Ejercicios Prácticos
+
+- [Práctica Búsqueda de datos de Biodiversidad"](../practicas/primary_data_practicas.qmd)
+
+
+

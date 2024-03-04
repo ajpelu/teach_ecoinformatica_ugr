@@ -1,0 +1,78 @@
+---
+title: "Práctica Búsqueda de datos de Biodiversidad"
+format: html
+number-sections: true
+number-depth: 4
+date: 2024-03-04
+author:
+  name: Antonio J. Pérez-Luque
+  orcid: 0000-0002-1747-0469
+editor: visual
+crossref:
+  fig-title: Figura     # (default is "Figure")
+  tbl-title: Tabla     # (default is "Table")
+  title-delim: .     # (default is ":")
+  fig-prefix: Figura
+  tbl-prefix: Tabla
+  ref-hyperlink: true
+  sec-prefix: ""
+  sec-labels: alpha
+---
+
+# Introducción {.unnumbered}
+
+# Objetivos
+
+-   Familiarizarse con los procesos de búsqueda y de descarga de información primaria de biodiversidad a través del portal de Datos de Biodiversidad del nodo GBIF España (<https://datos.gbif.es/>).
+
+# Actividades
+
+-   Cada alumno ha de hacer las actividades 1 y 2 (**nivel básico**).
+
+## Actividad 1. Búsqueda y descarga de datos de un taxón {#sec-actividad1}
+
+1.  Ve al portal de datos de GBIF
+
+2.  Realiza una búsqueda del taxon *Pinus nigra*
+
+3.  Descarga todos los datos
+
+4.  Realiza un informe indicando la tipología de los datos que has obtenido (por ejemplo: tipo de observación, filtros de calidad, etc.). Puedes añadir también algúna imágen de los especímenes.
+
+5.  Añade un apartado de discusión al informe relativo a los datos que te has descargado. ¿Has encontrado registros de ausencias? En caso afirmativo, ¿para que crees que sirven este tipo de registros?
+
+::: {.callout-note appearance="simple"}
+## Entrega
+
+-   Cada alumno ha de enviar el informe generado.
+-   Se valorará positivamente la realización del informe en un documento reproducible (`.Rmd`) y con control de versiones (con un repositorio asociado). En dicho caso el alumno podrá subir la url del repositorio asociado.
+:::
+
+## Actividad 2. Búsqueda y descarga de datos de una zona determinada usando el Portal Internacional
+
+1.  Ve al portal de datos internacional de GBIF <https://www.gbif.org/> (@fig-portal).
+
+![Vista del Portal Internacional de datos](images/primary-portal.png){#fig-portal}
+
+2.  Realiza una búsqueda espacial de todos los registros que existen en Sierra Nevada. Para ello utiliza el archivo de delimitación de Sierra Nevada en formato WKT que puedes encontrar [aquí](https://raw.githubusercontent.com/ajpelu/teach_ecoinformatica_ugr/main/slides/teach_primary_data/images/sn_wkt.txt)
+
+3.  Ve al apartado ***Get data*** y dentro de él, al apartado ***Occurrences***
+
+4.  En el menú de la izquierda, usa el filtro ***Location*** y especifica la opción ***Geometry*** (@fig-wkt).
+
+![Inclusión del archivo espacial para realizar la búsqueda](images/primary-wkt.png){height=600 #fig-wkt}
+
+5.  Incluye la delimitación de Sierra Nevada usando el archivo WKT indicado previamente (@fig-map).
+
+![Mapa con los resultados](images/primary-map.png){#fig-map}
+
+6.  Descarga la búsqueda. Recuerda que te pedirá que te identifiques para realizar la descarga (@fig-download)
+
+![Vista de la descarga de los resultados](images/primary-download.png){#fig-download}
+
+
+::: {.callout-note appearance="simple"}
+## Entrega
+
+No es necesario realizar entrega, puesto que los datos descargados los usaréis mas adelante para el otro módulo
+:::
